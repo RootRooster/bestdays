@@ -1,6 +1,8 @@
 "use client";
 import Logo from "./logo";
 import { useState } from "react";
+import Link from "next/link";
+
 export default function NavBar() {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -9,46 +11,46 @@ export default function NavBar() {
   };
   return (
     <>
-      <header className="bg-white shadow-xl text-black font-bold">
+      <header className="text-white font-bold">
         <nav className="flex justify-between items-center w-[92%] mx-auto">
           <div className="pl-5 py-8">
-            <Logo color="black" />
+            <Logo color="white" />
           </div>
           <div
-            className={`md:static bg-white md:min-h-fit absolute min-h-[60vh] left-0 ${isExpanded ? "top-28" : "top-[-100%]"} md:w-auto w-full flex items-center px-5`}
+            className={`md:static md:min-h-fit absolute min-h-[60vh] left-0 ${isExpanded ? "top-28 bg-blue-700" : "top-[-100%]"} md:w-auto w-full flex items-center px-5`}
           >
             <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12">
               <li>
-                <a className="hover:text-gray-300" href="">
+                <Link className="hover:text-gray-300" href="/">
                   DOMOV
-                </a>
+                </Link >
               </li>
               <li>
-                <a className="hover:text-gray-300" href="">
+                <Link  className="hover:text-gray-300" href="/about">
                   PREDSTAVITEV
-                </a>
+                </Link >
               </li>
               <li>
-                <a className="hover:text-gray-300" href="">
+                <Link  className="hover:text-gray-300" href="/sponsors">
                   PARTNERJI
-                </a>
+                </Link >
               </li>
               <li>
-                <a className="hover:text-gray-300" href="">
+                <Link  className="hover:text-gray-300" href="/publication">
                   PUBLIKACIJE
-                </a>
+                </Link >
               </li>
               <li>
-                <a className="hover:text-gray-300" href="">
+                <Link  className="hover:text-gray-300" href="/team">
                   O NAS
-                </a>
+                </Link >
               </li>
             </ul>
           </div>
 
           <div
             onClick={handleToggle}
-            className="flex items-center gap-6 md:hidden click:bg-gray-100 hover:bg-gray-50 border p-2 rounded-lg border-gray-300"
+            className="flex items-center gap-6 md:hidden click:bg-gray-100 hover:bg-best-blue-900/30 border p-2 rounded-lg border-gray-300"
           >
             <svg
               xmlns="http://www.w2.org/2000/svg"

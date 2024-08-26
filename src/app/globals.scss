@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.radialbestblue100 {
+  background: radial-gradient(
+    farthest-side, 
+    #5cb5ff, 
+    transparent
+  );
+}
+.radialbestblue900 {
+  background: radial-gradient(
+    farthest-side, 
+    #000055, 
+    transparent
+  );
+}
