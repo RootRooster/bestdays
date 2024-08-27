@@ -17,31 +17,26 @@ export default function NavBar() {
             <Logo color="white" />
           </div>
           <div
-            className={`md:static md:min-h-fit absolute min-h-[60vh] left-0 ${isExpanded ? "top-28 bg-blue-700" : "top-[-100%]"} md:w-auto w-full flex items-center px-5`}
+            className={`md:static z-50 md:min-h-fit absolute min-h-[100vh] left-0 ${isExpanded ? "top-0 bg-blue-700" : "top-[-100%]"} md:w-auto w-full flex items-center px-5`}
           >
-            <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12">
+            <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-20  w-full justify-center items-center">
               <li>
-                <Link className="hover:text-gray-300" href="/">
+                <Link onClick={handleToggle} className="hover:text-gray-300" href="/">
                   DOMOV
                 </Link >
               </li>
               <li>
-                <Link  className="hover:text-gray-300" href="/about">
-                  PREDSTAVITEV
-                </Link >
-              </li>
-              <li>
-                <Link  className="hover:text-gray-300" href="/sponsors">
+                <Link onClick={handleToggle} className="hover:text-gray-300" href="/sponsors">
                   PARTNERJI
                 </Link >
               </li>
               <li>
-                <Link  className="hover:text-gray-300" href="/publication">
+                <Link onClick={handleToggle} className="hover:text-gray-300" href="/publication">
                   PUBLIKACIJE
                 </Link >
               </li>
               <li>
-                <Link  className="hover:text-gray-300" href="/team">
+                <Link onClick={handleToggle} className="hover:text-gray-300" href="/team">
                   O NAS
                 </Link >
               </li>

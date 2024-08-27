@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.className} bg-best-blue h-screen text-white`}>
+      <body className={`${jost.className} bg-best-blue h-screen text-white overflow-x-hidden`}>
         <div className="spots w-[100vw] h-[100vh] absolute -z-20 overflow-hidden">
           <div className="-z-10 absolute top-0 right-[-50vw] md:right-[-30vw] radialbestblue100 w-[90vw] md:w-[60vw] h-[60vh] md:h-[90vh] -rotate-45 animate-pulse"></div>
           <div className="-z-10 absolute top-[-45vh] left-[-45vw] radialbestblue900 w-[90vw] h-[90vh] rotate-45 animate-[pulse_4s_ease-in-out_infinite]"></div>
