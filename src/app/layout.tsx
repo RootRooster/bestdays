@@ -37,6 +37,12 @@ export const metadata: Metadata = {
       alt: "Digital science",
     },
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 };
 
 export default function RootLayout({
