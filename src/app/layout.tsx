@@ -43,6 +43,7 @@ export const metadata: Metadata = {
     maximumScale: 1,
     userScalable: false,
   },
+  keywords: ['BEST', 'dnevi znanosti', 'best dnevi znanosti', 'simpozij', 'Ljubljana', 'best dnevi znanosti ljubljana']
 };
 
 export default function RootLayout({
