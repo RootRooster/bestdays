@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://scx2.b-cdn.net/gfx/news/2018/34-researchersp.jpg",
-        secureUrl: "https://scx2.b-cdn.net/gfx/news/2018/34-researchersp.jpg",
+        url: "https://www.best-dnevi-znanosti.si/_next/image?url=%2Fimage3.png&w=1080&q=75",
+        secureUrl: "https://www.best-dnevi-znanosti.si/_next/image?url=%2Fimage3.png&w=1080&q=75",
         width: 450,
         height: 290,
-        alt: "Digital science.",
+        alt: "Knowledge is power.",
       },
     ],
     title: "BEST dnevi znanosti",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
       "Strokovno-izobraževalni dogodek, namenjen študentom Fakultete za kemijo in kemijsko tehnologijo ter Fakultete za računalništvo in informatiko.",
     creator: "@BESTLjubljana",
     images: {
-      url: "https://scx2.b-cdn.net/gfx/news/2018/34-researchersp.jpg",
-      alt: "Digital science",
+      url: "https://www.best-dnevi-znanosti.si/_next/image?url=%2Fimage3.png&w=1080&q=75",
+      alt: "Knowledge is power.",
     },
   },
   viewport: {
