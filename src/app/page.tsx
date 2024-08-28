@@ -12,7 +12,7 @@ export default function Home() {
       <Section 
         subtitle="Konferenca"
         title="AI in napredne tehnologije v znanosti"
-        text="Konferenca je sestavljena iz simpozija, okrogle mize, stojnic podjetij in Poster minute"
+        text="Konferenca je sestavljena iz simpozija, okrogle mize, stojnic podjetij in Poster minute."
         imageSrc="/image1.png"
         imageAlt="Microscope AI code atom technology"
         isImageRight={true}

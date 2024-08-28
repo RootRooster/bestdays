@@ -12,17 +12,17 @@ export default function Hero({ title, text }: { title: string; text: string }) {
     <>
       <div className="flex justify-center">
         <div
-          className={`text duration-300 mt-[30vh] ${isHidden ? "mb-[30vh]" : "mb-[15vh]"} md:my-[30vh] text-center`}
+          className={`text duration-300 mt-[16vh] ${isHidden ? "mb-[30vh]" : "mb-[15vh]"} md:my-[30vh] text-center`}
         >
           <div className="mb-10">
-            <h1 className="text-7xl md:text-9xl font-bold uppercase">
+            <h1 className="text-5xl md:text-9xl font-bold uppercase">
               {title}
             </h1>
           </div>
           <div
             className={`px-20 duration-300 overflow-hidden ${isHidden ? "h-20" : "h-60"} md:h-auto`}
           >
-            <p className="text-lg">
+            <p className="text-sm md:text-lg">
               {text}
             </p>
           </div>

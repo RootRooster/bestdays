@@ -1,7 +1,7 @@
 export default function BestButton({
   link,
   text,
-  modifyTextStyle = "md:px-20 text-xl md:text-base px-32",
+  modifyTextStyle = "md:px-20 text-xl md:text-base md:px-32 px-20",
 }: {
   link: string;
   text: string;

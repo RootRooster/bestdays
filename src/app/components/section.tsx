@@ -20,8 +20,8 @@ export default function Section({
       className={`flex mb-52 flex-col ${isImageRight ? "md:flex-row" : "md:flex-row-reverse"} gap-10 mx-10 md:mx-32 items-center`}
     >
       <div className="md:w-1/2 w-full md:h-[100%]">
-        <h2 className="text-base uppercase">{subtitle}</h2>
-        <h1 className="text-7xl font-bold uppercase">{title}</h1>
+        <h2 className="text-sm md:text-base uppercase">{subtitle}</h2>
+        <h1 className="text-4xl md:text-7xl font-bold uppercase">{title}</h1>
         <p className="text-lg pr-7 text-justify mt-5">
           {text}
         </p>
