@@ -22,7 +22,7 @@ export default function Section({
       <div className="md:w-1/2 w-full md:h-[100%]">
         <h2 className="text-sm md:text-base uppercase">{subtitle}</h2>
         <h1 className="text-4xl md:text-7xl font-bold uppercase">{title}</h1>
-        <p className="text-lg pr-7 text-justify mt-5">
+        <p className="text-lg pr-7 mt-5 text-left">
           {text}
         </p>
         <div className="button-container flex justify-center pt-16">

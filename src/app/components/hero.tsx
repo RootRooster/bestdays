@@ -22,7 +22,7 @@ export default function Hero({ title, text }: { title: string; text: string }) {
           <div
             className={`px-20 duration-300 overflow-hidden ${isHidden ? "h-20" : "h-60"} md:h-auto`}
           >
-            <p className="text-sm md:text-lg">
+            <p className="text-sm md:text-lg text-left md:text-center">
               {text}
             </p>
           </div>

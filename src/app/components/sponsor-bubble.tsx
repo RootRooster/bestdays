@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Bubble({
   name,
   imageUrl,
-  size,
+  size
 }: {
   name: string;
   imageUrl: string;
@@ -10,13 +10,12 @@ export default function Bubble({
 }) {
   return (
     <>
-      <div className="sponsor flex items-center justify-center flex-col mt-20">
+      <div className="sponsor flex items-center justify-center flex-col">
         <div
-          className={`img bg-white w-${size} h-${size} items-center flex rounded-full overflow-hidden`}
+          className={`bg-white items-center flex overflow-hidden m-5 rounded-full h-56 w-56 md:h-${size} md:w-${size}`}
         >
-          <Image src={imageUrl} alt={name} height={500} width={500} />
+          <Image src={imageUrl} alt={name} height={500} width={500} className="object-contain" />
         </div>
-        <div className="text-4xl">{name}</div>
       </div>
     </>
   );
