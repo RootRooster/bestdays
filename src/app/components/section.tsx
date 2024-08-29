@@ -25,7 +25,7 @@ export default function Section({
         <p className="text-lg pr-7 mt-5 text-left">
           {text}
         </p>
-        <div className="button-container flex justify-center pt-16">
+        <div className="button-container hidden justify-center pt-16">
           <BestButton
             link="https://forms.gle/Dm2HiuRQs7YRjd1a7"
             text="Prijavi se"

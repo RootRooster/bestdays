@@ -16,7 +16,7 @@ export default function Page() {
     <>
       <div className="flex justify-center flex-col items-center">
         <h1 className="md:text-7xl text-5xl text-center font-bold uppercase mt-32">
-          diamantni sponzorji
+          diamantni sponzor
         </h1>
         <div className="w-full mb-52 mt-20 md:flex md:flex-row justify-center lg:px-32">
           {goldSponsors.map((sponsor) => (
@@ -25,32 +25,35 @@ export default function Page() {
               name={sponsor.name}
               imageUrl={sponsor.url}
               size="96"
+              borderColor="border-sky-400"
             />
           ))}
         </div>
         <h1 className="md:text-7xl text-5xl text-center font-bold uppercase">
           zlati sponzorji
         </h1>
-        <div className="w-full mb-52 mt-20 md:flex md:flex-row justify-between xl:px-64">
+        <div className="w-full mb-52 mt-20 grid grid-cols-1 md:grid-cols-3">
           {silverSponsors.map((sponsor) => (
             <Bubble
               key={sponsor.name}
               name={sponsor.name}
               imageUrl={sponsor.url}
               size="72"
+              borderColor="border-yellow-500"
             />
           ))}
         </div>
         <h1 className="md:text-7xl text-5xl text-center font-bold uppercase">
           srebrni sponzorji
         </h1>
-        <div className="w-full mb-52 mt-20 md:flex md:flex-row justify-between 2xl:px-96">
+        <div className="w-full mb-52 mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
           {bronzeSponsors.map((sponsor) => (
             <Bubble
               key={sponsor.name}
               name={sponsor.name}
               imageUrl={sponsor.url}
               size="56"
+              borderColor="border-slate-400"
             />
           ))}
         </div>

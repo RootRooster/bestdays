@@ -19,7 +19,7 @@ export default function NavBar() {
             </Link>
           </div>
           <div
-            className={`md:static z-50 min-h-fit ${isExpanded ? "left-0" : "left-[-100%]"} top-0 md:w-auto w-full flex items-center fixed h-full md:bg-transparent bg-best-blue`}
+            className={`md:static duration-500 z-50 min-h-fit ${isExpanded ? "left-0" : "left-[-100%]"} top-0 md:w-auto w-full flex items-center fixed h-full md:bg-transparent bg-best-blue`}
           >
             <ul className="flex flex-col md:flex-row items-center gap-[10vh] md:gap-[4vw] w-full justify-center">
               <li>
