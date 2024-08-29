@@ -19,32 +19,66 @@ export default function NavBar() {
             </Link>
           </div>
           <div
-            className={`static z-50 min-h-fit left-0 md:w-auto w-full flex items-center px-5`}
+            className={`md:static z-50 min-h-fit ${isExpanded ? "left-0" : "left-[-100%]"} top-0 md:w-auto w-full flex items-center fixed h-full md:bg-transparent bg-best-blue`}
           >
-            <ul className="flex flex-row items-center gap-[4vw] w-full justify-center">
+            <ul className="flex flex-col md:flex-row items-center gap-[10vh] md:gap-[4vw] w-full justify-center">
               <li>
-                <Link onClick={handleToggle} className="hover:text-gray-300 hidden md:block" href="/">
+                <Link
+                  onClick={handleToggle}
+                  className="hover:text-gray-300"
+                  href="/"
+                >
                   DOMOV
-                </Link >
+                </Link>
               </li>
               <li>
-                <Link onClick={handleToggle} className="hover:text-gray-300" href="/sponsors">
+                <Link
+                  onClick={handleToggle}
+                  className="hover:text-gray-300"
+                  href="/sponsors"
+                >
                   PARTNERJI
-                </Link >
+                </Link>
               </li>
               <li>
-                <Link onClick={handleToggle} className="hover:text-gray-300" href="/publication">
+                <Link
+                  onClick={handleToggle}
+                  className="hover:text-gray-300"
+                  href="/publication"
+                >
                   PUBLIKACIJE
-                </Link >
+                </Link>
               </li>
               <li>
-                <Link onClick={handleToggle} className="hover:text-gray-300 hidden md:block" href="/team">
+                <Link
+                  onClick={handleToggle}
+                  className="hover:text-gray-300"
+                  href="/team"
+                >
                   O NAS
-                </Link >
+                </Link>
               </li>
             </ul>
           </div>
-
+          <div
+            onClick={handleToggle}
+            className="h-12 w-12 border border-white flex justify-center items-center rounded md:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
         </nav>
       </header>
     </>
