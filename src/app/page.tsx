@@ -3,13 +3,12 @@ import Section from "./components/section";
 export default function Home() {
   return (
     <main>
-      <Hero 
-      title="Best dnevi znanosti"
-      text="Strokovno-izobraževalni dogodek, namenjen študentom Fakultete za kemijo in kemijsko tehnologijo ter Fakultete za računalništvo in informatiko. Dogodek pripravljajo člani neprofitnega študentskega društva BEST Ljubljana (angl. “Board of European Students of Technology“). V okviru dogodka organiziramo konferenco delavnice in študijo primera.
-
-        "
+      <Hero
+        title="Best dnevi znanosti"
+        text="Strokovno-izobraževalni dogodek, namenjen študentom Fakultete za kemijo in kemijsko tehnologijo ter Fakultete za računalništvo in informatiko. Dogodek pripravljajo člani neprofitnega študentskega društva BEST Ljubljana (angl. “Board of European Students of Technology“). V okviru dogodka organiziramo konferenco delavnice in študijo primera."
+        buttonText=""
       />
-      <Section 
+      <Section
         subtitle="Konferenca"
         title="AI in napredne tehnologije v znanosti"
         text="Konferenca je sestavljena iz simpozija, okrogle mize, stojnic podjetij in Poster minute."
@@ -17,7 +16,7 @@ export default function Home() {
         imageAlt="Microscope AI code atom technology"
         isImageRight={true}
       />
-      <Section 
+      <Section
         subtitle="Delavnice"
         title="Delavnice"
         text="Kratke interaktivne delavnice študentom omogočajo, da znotraj 2 ur pridobijo praktično-uporabne izkušnje in znanja, za kar se jim podeli certifikat."
@@ -25,7 +24,7 @@ export default function Home() {
         imageAlt="Book workshop chemistry"
         isImageRight={false}
       />
-      <Section 
+      <Section
         subtitle="Študiji primera"
         title="Case Study"
         text="Na študiji primera (“Case Study”) pa lahko študenti pokažejo svoje znanje in sposobnosti reševanja problemov ter dela v skupini, za kar lahko osvojijo tudi lepe nagrade."

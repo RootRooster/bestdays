@@ -11,7 +11,8 @@ export default function Page() {
     { name: "Karin Kunstelj", role: "Sponsorship Manager" },
     { name: "Lucija Kovaček", role: "Social Media Manager" },
     { name: "Manca Simončič", role: "Content Creator" },
-    { name: "Nik?", role: "Special Projects Lead" },
+    { name: "Nik Cadez", role: "Special Projects Lead" },
+    { name: "Deni Krasna", role: "Professional paraglider" },
   ];
   return (
     <>
