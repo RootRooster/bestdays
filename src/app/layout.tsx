@@ -82,7 +82,7 @@ export default function RootLayout({
                 className="w-10"
               />
             </a>
-            <a href="https://www.instagram.com/best_ljubljana/">
+            <a href="https://www.instagram.com/best_dnevi_znanosti/">
               <Image
                 src="/instagram.svg"
                 alt="instagram logo"
