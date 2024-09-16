@@ -1,18 +1,35 @@
 import Card from "../components/team-card";
+import Image from "next/image";
 
 export default function Page() {
   const teamMembers = [
-    { name: "Zara Bunc", role: "Lead Organizer" },
-    { name: "Neža Bajec", role: "Event Coordinator" },
-    { name: "Špela Blaznik", role: "Marketing Specialist" },
-    { name: "Lara Likar", role: "Logistics Manager" },
-    { name: "Tinkara Korošec", role: "Design Lead" },
-    { name: "Neja Brumec", role: "Volunteer Coordinator" },
-    { name: "Karin Kunstelj", role: "Sponsorship Manager" },
-    { name: "Lucija Kovaček", role: "Social Media Manager" },
-    { name: "Manca Simončič", role: "Content Creator" },
-    { name: "Nik Cadez", role: "Special Projects Lead" },
-    { name: "Deni Krasna", role: "Professional paraglider" },
+    { name: "Zara Bunc", role: "Lead Organizer", image: "Zara.jpg" },
+    { name: "Neža Bajec", role: "Event Coordinator", image: "Neža.jpg" },
+    {
+      name: "Špela Blaznik",
+      role: "Marketing Specialist",
+      image: "Špela.jpg",
+    },
+    { name: "Lara Likar", role: "Logistics Manager", image: "Lara.jpg" },
+    { name: "Tinkara Korošec", role: "Design Lead", image: "Tinkara.jpg" },
+    { name: "Neja Brumec", role: "Volunteer Coordinator", image: "Neja.jpg" },
+    {
+      name: "Karin Kunstelj",
+      role: "Sponsorship Manager",
+      image: "Karin.jpg",
+    },
+    {
+      name: "Lucija Kovaček",
+      role: "Social Media Manager",
+      image: "Lucija.jpg",
+    },
+    { name: "Manca Simončič", role: "Content Creator", image: "Manca.jpg" },
+    { name: "Nik Cadez", role: "Special Projects Lead", image: "Nik.jpg" },
+    {
+      name: "Deni Krasna",
+      role: "Professional paraglider",
+      image: "Deni.jpg",
+    },
   ];
   return (
     <>
@@ -29,6 +46,7 @@ export default function Page() {
               key={member.name}
               name={member.name}
               role={member.role}
+              image={member.image}
             />
           ))}
         </div>
