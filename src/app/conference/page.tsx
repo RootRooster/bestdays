@@ -40,7 +40,7 @@ export default function Page() {
             skozi reaktorske cevi ter natančno napovedujejo kemijske reakcije in
             premike molekul. Tadej Magajna iz podjetja Lek bo govoril o izzivih
             pri uporabi znanja, pridobljenega med študijem, v hitro razvijajočem
-            svetu umetne inteligence. Poudaril bo nevarnosti "know-it-all"
+            svetu umetne inteligence. Poudaril bo nevarnosti know-it-all
             miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih ved
             ter vlogo odprtokodnih orodij in skupnosti kot ključnega elementa za
             uspeh AI sistemov. Krka, eno izmed vodilnih generičnih farmacevtskih
