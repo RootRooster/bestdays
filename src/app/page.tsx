@@ -25,7 +25,7 @@ const cards: {
         textClass: "",
       },
     ],
-    image: "/mockimage2.png",
+    image: "/mockimage3.png",
     dateDay: "22",
     dateMonth: "OKT",
     key: "2",
@@ -67,7 +67,7 @@ const cards: {
         textClass: "",
       },
     ],
-    image: "/mockimage3.png",
+    image: "/mockimage2.png",
     dateDay: "24",
     dateMonth: "OKT",
     key: "3",
@@ -84,7 +84,6 @@ export default function Home() {
           buttonText=""
         />
       </div>
-
       {cards.map((card) => (
         <Card
           subtitle={card.subtitle}
