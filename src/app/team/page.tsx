@@ -3,31 +3,31 @@ import Image from "next/image";
 
 export default function Page() {
   const teamMembers = [
-    { name: "Zara Bunc", role: "Lead Organizer", image: "Zara.jpg" },
-    { name: "Neža Bajec", role: "Event Coordinator", image: "Neža.jpg" },
+    { name: "Zara Bunc", role: "Glavna organizatorka", image: "Zara.jpg" },
+    { name: "Neža Bajec", role: "Program", image: "Neža.jpg" },
     {
       name: "Špela Blaznik",
-      role: "Marketing Specialist",
+      role: "Stiki s podjetji",
       image: "Špela.jpg",
     },
-    { name: "Lara Likar", role: "Logistics Manager", image: "Lara.jpg" },
-    { name: "Tinkara Korošec", role: "Design Lead", image: "Tinkara.jpg" },
-    { name: "Neja Brumec", role: "Volunteer Coordinator", image: "Neja.jpg" },
+    { name: "Lara Likar", role: "Stiki z udeleženci", image: "Lara.jpg" },
+    { name: "Tinkara Korošec", role: "Ekipa za program", image: "Tinkara.jpg" },
+    { name: "Neja Brumec", role: "Ekipa za program", image: "Neja.jpg" },
     {
       name: "Karin Kunstelj",
-      role: "Sponsorship Manager",
+      role: "Ekipa za program",
       image: "Karin.jpg",
     },
     {
       name: "Lucija Kovaček",
-      role: "Social Media Manager",
+      role: "Ekipa za PR",
       image: "Lucija.jpg",
     },
     { name: "Manca Simončič", role: "Content Creator", image: "Manca.jpg" },
-    { name: "Nik Cadez", role: "Special Projects Lead", image: "Nik.jpg" },
+    { name: "Nik Cadez", role: "Grand Wizard of IT", image: "Nik.jpg" },
     {
       name: "Deni Krasna",
-      role: "Professional paraglider",
+      role: "Ekipa za PR",
       image: "Deni.jpg",
     },
   ];
