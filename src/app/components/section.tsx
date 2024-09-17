@@ -17,11 +17,11 @@ export default function Section({
 }) {
   return (
     <div
-      className={`flex mb-52 flex-col ${isImageRight ? "md:flex-row" : "md:flex-row-reverse"} gap-10 mx-10 md:mx-32 items-center`}
+      className={`flex mb-52 flex-col ${isImageRight ? "lg:flex-row" : "lg:flex-row-reverse"} gap-10 mx-10 lg:mx-32 items-center`}
     >
-      <div className="md:w-1/2 w-full md:h-[100%]">
+      <div className="lg:w-1/2 w-full md:h-[100%]">
         <h2 className="text-sm md:text-base uppercase">{subtitle}</h2>
-        <h1 className="text-3xl md:text-5xl font-bold uppercase">{title}</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold uppercase">{title}</h1>
         <p className="text-lg pr-7 mt-5 text-left">
           {text}
         </p>
