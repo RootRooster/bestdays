@@ -20,7 +20,7 @@ const sections: {
     subtitle: "NOVARTIS",
     title: "Postani detektiv v farmacevtski proizvodnji",
     text: "Si želiš preizkusiti svoje detektivske veščine v farmacevtski industriji? Pridruži se naši delavnici in se sooči z izzivi, s katerimi se vsakodnevno srečujejo tehnologi v proizvodnji. Prevzel boš vlogo detektiva in obravnaval resnični primer iz proizvodnje. S pomočjo analize podatkov in grafov boš iskal vzrok za nastalo težavo ter pomagal najti optimalno rešitev.",
-    imageSrc: "/zoom.png",
+    imageSrc: "/zoom.svg",
     imageAlt: "microscope",
     isImageRight: false,
   },
