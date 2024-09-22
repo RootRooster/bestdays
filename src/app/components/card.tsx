@@ -55,7 +55,7 @@ export default function Card({
             </div>
             {/*pomojem je treba buttonse gor prestavt tud?*/}
             <div className="buttons mx-5 flex justify-center gap-5 mb-5">
-              <a href="https://docs.google.com/document/d/15bPeJBq9K0aYMVI18K15w7kAbHdbDIAUaTiYxw06f-Q/edit">
+              <a href="https://linktr.ee/best_dnevi_znanosti">
                 <div className="flex justify-center bg-best-blue-100 text-best-blue-900 rounded-3xl px-7 py-3 sm:px-14 md:px-7">
                   <div className="uppercase font-bold text-sm sm:text-base md:text-sm">
                     Prijavi se
