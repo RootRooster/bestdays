@@ -23,8 +23,8 @@ export default function Page() {
       role: "Ekipa za PR",
       image: "Lucija.jpg",
     },
-    { name: "Manca Simončič", role: "Content Creator", image: "Manca.jpg" },
-    { name: "Nik Cadez", role: "Grand Wizard of IT", image: "Nik.jpg" },
+    { name: "Manca Simončič", role: "Logistika", image: "Manca.jpg" },
+    { name: "Nik Cadez", role: "IT", image: "Nik.jpg" },
     {
       name: "Deni Krasna",
       role: "Ekipa za PR",
