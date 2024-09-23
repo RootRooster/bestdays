@@ -15,13 +15,18 @@ const cards: {
     title: {text: "Nič več znanstvena fantastika: AI in napredne tehnologije v znanosti", textClass:""},
     text: [
       {
-        text: "Konferenca je sestavljena iz simpozija, okroglih miz, stojnic podjetij in Poster minute. Na simpoziju o naprednih tehnologijah in znanosti in okrogli mizi na temo bioinformatike boste lahko prisluhnili strokovnjakom iz industrije, fakultet in vodilnih podjetij iz industrije.",
+        text: "Konferenca je sestavljena iz simpozija, okroglih miz, stojnic podjetij in Poster minute.",
         key: "2.1",
         textClass: "",
       },
-      {
-        text: "Potekalo bo tudi mreženje študentov in podjetij na stojnicah (PARTNERJI). Študenti lahko oddate poster svojega diplomskega, magistrskega, doktorskega ali raziskovalnega dela. Poster bo razstavljen na dogodku, kar ga lahko pridete predstaviti. Objavljen bo tudi na spletni strani (PUBLIKACIJE).",
+       {
+        text: "Na simpoziju “AI in napredne tehnologije v znanosti” in okrogli mizi na temo bioinformatike boste lahko prisluhnili strokovnjakom z inštitutov, fakultet in vodilnih podjetij iz industrije. ",
         key: "2.2",
+        textClass: "",
+      },
+      {
+        text: "Potekalo bo tudi mreženje študentov in podjetij na stojnicah (PARTNERJI) in predstavitev diplomskih, magistrskih, doktorskih in raziskovalnih del študentov na plakatih (POSTER MINUTE 2024).",
+        key: "2.3",
         textClass: "",
       },
     ],
