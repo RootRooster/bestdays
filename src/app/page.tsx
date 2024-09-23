@@ -12,7 +12,7 @@ const cards: {
 }[] = [
   {
     subtitle: {text: "Konferenca", textClass:""},
-    title: {text: "Nič več znanstvena fantastika: AI v in napredne tehnologije v znanosti", textClass:""},
+    title: {text: "Nič več znanstvena fantastika: AI in napredne tehnologije v znanosti", textClass:""},
     text: [
       {
         text: "Konferenca je sestavljena iz simpozija, okroglih miz, stojnic podjetij in Poster minute. Na simpoziju o naprednih tehnologijah in znanosti in okrogli mizi na temo bioinformatike boste lahko prisluhnili strokovnjakom iz industrije, fakultet in vodilnih podjetij iz industrije.",
