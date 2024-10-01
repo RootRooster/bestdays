@@ -7,6 +7,7 @@ export default function Section({
   imageSrc,
   imageAlt,
   isImageRight = true,
+  buttons = []
 }: {
   subtitle: string,
   title: string,
@@ -14,6 +15,7 @@ export default function Section({
   imageSrc: string,
   imageAlt: string,
   isImageRight?: boolean;
+  buttons?: { link: string; text: string }[],
 }) {
   return (
     <div
@@ -26,10 +28,13 @@ export default function Section({
           {text}
         </p>
         <div className="button-container hidden justify-center pt-16">
+          {buttons.map((button, index) => (
           <BestButton
-            link="https://forms.gle/Dm2HiuRQs7YRjd1a7"
-            text="Prijavi se"
-          />
+            key={index}
+            link={button.link}
+            text={button.text}
+            />
+          ))}
         </div>
       </div>
       <div className="flex md:w-1/2 w-full justify-center items-center">
