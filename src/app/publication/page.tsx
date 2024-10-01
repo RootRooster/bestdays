@@ -14,10 +14,9 @@ export default function Page() {
     <>
       <Hero
         title="Oddaj svoj POSTER - Poster minute 2024"
-        textParagraphs={textParagraphs}
+        texts={textParagraphs}
         buttonText="Oddaj poster"
-        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSfrIeYkuqPVyOscxrBBqvN55UJl1FcrHb8RYvyhuemgYL3CHA/viewform"  
-      />
+      />      
     </>
   );
 }
