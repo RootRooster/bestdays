@@ -4,10 +4,12 @@ import { useState } from "react";
 export default function Hero({
   title,
   text,
+  texts,
   buttonText,
 }: {
   title: string;
-  text: string;
+  text?: string;
+  texts?: string[];
   buttonText: string;
 }) {
   const [isHidden, setTextHidden] = useState(true);
@@ -30,9 +32,20 @@ export default function Hero({
           <div
             className={`px-20 duration-300 overflow-hidden ${isHidden ? "h-20" : "h-60"} md:h-auto`}
           >
-            <p className="text-sm md:text-lg text-left md:text-center">
-              {text}
-            </p>
+            {text !== undefined && text !== "" && 
+              <p className="text-lg md:text-2xl">
+                {text}
+              </p>
+            }
+
+            {texts !== undefined && texts.length > 0 && (
+              texts.map((text, index) => (
+                <p key={index} className="text-lg md:text-2xl" style={{paddingBottom: "40px"}}>
+                  {text}
+                </p>
+              ))
+            )}
+
           </div>
           <div className="md:hidden text-best-blue-900 mt-5">
             <button onClick={toggleHidden}>

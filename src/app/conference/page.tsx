@@ -7,7 +7,7 @@ export default function Page() {
         </div>
         <div className="text-4xl mb-3 md:text-5xl">
           <h1>
-            Nič več znanstvena fantastika: AI v in napredne tehnologije v
+            Nič več znanstvena fantastika: AI in napredne tehnologije v
             znanosti
           </h1>
         </div>
@@ -23,7 +23,7 @@ export default function Page() {
         </div>
         <div>
           <h3 className="text-3xl md:text-4xl">
-            Kemija in kemijsko inženirstvo
+           sklop Kemija in kemijsko inženirstvo
           </h3>
           <p className="mb-20 mt-3 md:text-lg">
             Kemija je temelj vsega, kar nas obdaja, z naprednimi tehnologijami
@@ -52,29 +52,23 @@ export default function Page() {
             napovedujejo kemijske reakcije in premike molekul.
             <br />
             <br />
-            <b>Tadej Magajna</b> iz podjetja Lek bo govoril o izzivih pri
-            uporabi znanja, pridobljenega med študijem, v hitro razvijajočem
-            svetu umetne inteligence. Poudaril bo nevarnosti "know-it-all"
-            miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih ved
-            ter vlogo odprtokodnih orodij in skupnosti kot ključnega elementa za
-            uspeh AI sistemov.
+            <b>Srečko Zupančič</b> in <b>Lovro Klenovšek</b> iz podjetja Krka, bosta predstavila morfološko analizo farmacevtskih kristalov. Govorila bosta o tem, kako z razvojem avtomatizirane rešitve za natančno prepoznavanje delcev z uporabo naprednih modelov strojnega vida izboljšajo natančnost in hitrost analize.
             <br />
             <br />
-            <b>Krka</b>, eno izmed vodilnih generičnih farmacevtskih podjetij v
-            svetu, bo predstavila kako umetna inteligenca in različne napredne
-            tehnologije nastopajo v njihovi proizvodnji in razvoju formulacij
-            zdravil.
+            <b>Nacionalni forenzični laboratorij</b>
           </p>
         </div>
         <div className="paragraph-title">
-          <h3 className="text-3xl md:text-4xl">Računalništvo in informatika</h3>
+          <h3 className="text-3xl md:text-4xl"> sklop Računalništvo in informatika</h3>
           <p className="mb-20 mt-3 md:text-lg">
             Znanje programiranja je danes koristno na številnih področjih, ampak
             ali se zavedaš, kje vse lahko z njim prispevaš? Na tem sklopu
             konference bodo strokovnjaki razkrili, kako napredne tehnologije in
             programiranje oblikujejo prihodnost raziskav, industrije in
-            izobraževanja. Te zanima kako izgleda programiranje za industrijo
-            ultralahkih letal podjetja Pipistrel?
+            izobraževanja. Te zanima, kako se praktično aplicirajo tehnologije obogatene resničnosti (AR)?
+            <br />
+            <br />
+            <b>Prof. dr. Marko Robnik Šikonja</b>
             <br />
             <br />
             <b>Prof. dr. Jaka Sodnik</b> s Fakultete za elektrotehniko bo
@@ -92,10 +86,7 @@ export default function Page() {
             modelov.
             <br />
             <br />
-            <b>Pipistrel</b>, vodilno podjetje v industriji ultralahkih letal,
-            bo prikazalo, kako razvijajo nove napredne tehnologije za letalsko
-            industrijo, ki zmanjšujejo vpliv na okolje in izboljšujejo
-            učinkovitost.
+            <b>Tadej Magajna</b> iz podjetja Lek bo govoril o izzivih pri uporabi znanja, pridobljenega med študijem, v hitro razvijajočem svetu umetne inteligence. Poudaril bo nevarnosti "know-it-all" miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih ved ter vlogo odprtokodnih orodij in skupnosti kot ključnega elementa za uspeh AI sistemov.
             <br />
             <br />
             <b>Andrej P. Škraba</b> bo predstavil Astra AI, prvega slovenskega
@@ -106,7 +97,7 @@ export default function Page() {
           </p>
         </div>
         <div className="paragraph-title">
-          <h3 className="text-3xl md:text-4xl">Biokemija</h3>
+          <h3 className="text-3xl md:text-4xl">sklop Biokemija</h3>
           <p className="mb-20 mt-3 md:text-lg">
             Od biokemije raka do strukturne biologije, umetna inteligenca danes
             igra ključno vlogo v naprednih raziskavah na vseh področjih

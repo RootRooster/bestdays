@@ -8,7 +8,7 @@ const jost = Jost({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "BEST dnevi znanosti",
-  description: `Strokovno-izobraževalni dogodek</b>, namenjen študentom Fakultete za
+  description: `<b>Strokovno-izobraževalni dogodek</b>, namenjen študentom Fakultete za
             kemijo in kemijsko tehnologijo ter Fakultete za računalništvo in
             informatiko.`,
   openGraph: {
