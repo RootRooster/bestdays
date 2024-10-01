@@ -86,7 +86,7 @@ export default function Page() {
             modelov.
             <br />
             <br />
-            <b>Tadej Magajna</b> iz podjetja Lek bo govoril o izzivih pri uporabi znanja, pridobljenega med študijem, v hitro razvijajočem svetu umetne inteligence. Poudaril bo nevarnosti "know-it-all" miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih ved ter vlogo odprtokodnih orodij in skupnosti kot ključnega elementa za uspeh AI sistemov.
+            <b>Tadej Magajna</b> iz podjetja Lek bo govoril o izzivih pri uporabi znanja, pridobljenega med študijem, v hitro razvijajočem svetu umetne inteligence. Poudaril bo nevarnosti &quot;know-it-all&quot; miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih ved ter vlogo odprtokodnih orodij in skupnosti kot ključnega elementa za uspeh AI sistemov.
             <br />
             <br />
             <b>Andrej P. Škraba</b> bo predstavil Astra AI, prvega slovenskega
