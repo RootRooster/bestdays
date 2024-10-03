@@ -68,7 +68,7 @@ export default function Page() {
             izobraževanja. Te zanima, kako se praktično aplicirajo tehnologije obogatene resničnosti (AR)?
             <br />
             <br />
-            <b>Prof. dr. Marko Robnik Šikonja</b>
+            <b>Prof. dr. Marko Robnik Šikonja</b> s Fakultete za računalništvo in informatiko bo predstavil delovanje velikih jezikovnih modelov, ki so temeljito spremenili način dela na mnogih področjih. Izpostavil bo nekaj aplikacij, pristranosti in možnih prihodnosti umetne inteligence ter potencialne posledice za ljudi.
             <br />
             <br />
             <b>Prof. dr. Jaka Sodnik</b> s Fakultete za elektrotehniko bo

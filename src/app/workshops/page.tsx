@@ -1,81 +1,209 @@
 import Section from "../components/section";
 
-const sections: {
-  subtitle: string;
-  title: string;
-  text: string;
-  imageSrc: string;
-  imageAlt: string;
-  isImageRight: boolean;
-}[] = [
-  {
-  subtitle: "KRKA",
-  title: "Virtualni Krkin laboratorij in reševanje farmacevtskega izziva",
-  text: `Vabljeni na navdihujočo delavnico z raziskovalci iz Krke!\n\n
-Pridružite se nam na edinstveni delavnici, kjer vam bodo Krkini raziskovalci razkrili skrivnosti razvoja in proizvodnje njihovih generičnih zdravil. S pomočjo mešane resničnosti boste vstopili v svet vrhunske Krkine tehnologije in doživeli proces, kot ga vidijo strokovnjaki.\n\n
-<b>Kaj vas čaka?</b>\n\n
-<b>Ekskluzivni vpogled:</b> Spoznajte, kako poteka razvoj in proizvodnja Krkinih zdravilnih učinkovin ter zdravil, od začetne ideje do končnega izdelka.\n\n
-<b>Interaktivna izkušnja:</b> S pomočjo mešane resničnosti boste doživeli tehnologijo, ki poganja Krkine inovacije.\n\n
-<b>Reševanje izzivov:</b> Združite moči s študenti različnih smeri in skupaj rešite modelni problem v proizvodnji zdravila.\n\n
-<b>Analiza podatkov:</b> Na podlagi analiznih in tehnoloških podatkov boste identificirali odstopanja in našli rešitve za izboljšanje procesa.\n\n
-Cilj delavnice je povezovanje znanj in izkušenj študentov različnih smeri za reševanje izzivov v farmacevtski industriji. Pridobite dragocene izkušnje, spoznajte nove ljudi in se potopite v svet farmacevtske industrije!`,
-  imageSrc: "/microscope.png",
-  imageAlt: "mikroskop",
-  isImageRight: true,
-},
-  {
-  subtitle: "NOVARTIS",
-  title: "Postani detektiv v farmacevtski proizvodnji",
-  text: `<b>Si želiš preizkusiti svoje detektivske veščine v farmacevtski industriji?</b> Pridruži se naši delavnici in se sooči z izzivi, s katerimi se vsakodnevno srečujejo tehnologi v proizvodnji.\n\n
-<b>Prevzel boš vlogo detektiva in obravnaval resnični primer iz proizvodnje.</b>\n\n
-S pomočjo analize podatkov in grafov boš iskal vzrok za nastalo težavo ter pomagal najti optimalno rešitev.`,
-  imageSrc: "/zoom.svg",
-  imageAlt: "lupa",
-  isImageRight: false,
-},
-{
-  subtitle: "PIPISTREL",
-  title: "Inovacije v letalstvu s Pipistrel Velis Electro",
-  text: `Na delavnici si boste <b>skupaj z inženirji podjetja Pipistrel podrobneje pogledali letalo Velis Electro</b>, prvo certificirano popolnoma električno letalo na svetu. Spoznali boste značilnosti električnega letala ter prednosti napram konvecionalnim pogonom, glavne komponente elektro pogona ter vlogo vgrajene programske opreme in algoritmov za delovanje letala. Izvedeli boste kaj je EASA tipski certifikat ter kako poteka certificiranje programske opreme.\n\n
-V drugem delu delavnice se boste posvetili <b>praktičnim vidikom uporabe letala</b>. Skupaj z inženirji boste preverili delovanje snemalnika leta in vizualizirali prodobljene podatke. V nadaljevanju si boste pobližje pogledali <b>kako poteka diagnostika</b> in katere vse zanimive informacije letalo še skriva pred uporabniki. Za zaključek boste izvedli še <b>nadgradnjo vgrajene programske opreme</b>.\n\n
-Delavnica je namenjena vsem študentom, ki jih zanima preplet letalstva in tehnologije. Predhodno znanje o letalstvu ali razvoji programske opreme ni potrebno.`,
-  imageSrc: "/plane.png",
-  imageAlt: "letalo",
-  isImageRight: true,
-},
-  {
-  subtitle: "TEHNOLOŠKI PARK",
-  title: "Osnove razširjene resničnosti (XR) in umetne inteligence (AI)",
-  text: `Pridružite se nam, da odkrijete, kako sodobne tehnologije spreminjajo svet in industrijo. V sodelovanju z vrhunskimi strokovnjaki se boste seznanili z osnovami XR, kjer boste z uporabo očal za virtualno resničnost (VR) izkusili futuristične aplikacije in inovativne pristope.\n\n
-<b>Uvod v XR in AI:</b> Spoznajte osnovne pojme razširjene resničnosti in umetne inteligence, njune praktične uporabe ter vpliv na različne industrijske panoge.\n\n
-<b>Uporaba VR očal:</b> Z uporabo VR očal boste doživeli interaktivne simulacije in aplikacije, ki temeljijo na tehnologijah XR in AI. Iz prve roke boste izkusili svet, kjer tehnologija prepleta resničnost in digitalno okolje.\n\n
-Skupaj s študenti različnih področij boste reševali izzive, ki temeljijo na podatkovno vodenih scenarijih in inteligentnih sistemih, ki jih poganja AI.\n\n
-<b>Raziskovanje prihodnosti:</b> Pogovarjali se bomo o prihodnosti XR in umetne inteligence, njunem potencialu v industriji ter kako lahko ta tehnologija izboljša proizvodne in razvojne procese. Cilj delavnice je ponuditi praktičen vpogled v uporabo sodobnih tehnologij ter povezovanje znanj študentov različnih smeri. Pridobite nova znanja, izkušnje in odkrijte, kako lahko XR in AI vplivata na prihodnost industrije!`,
-  imageSrc: "/vr.png",
-  imageAlt: "VR očala",
-  isImageRight: false,
-},
-  {
-  subtitle: "",
-  title: "Število mest na delavnicah je omejeno, zato se čim prej prijavi!",
-  text:"",
-  imageSrc: "",
-  imageAlt: "",
-  isImageRight: true,
-}
-];
 export default function Page() {
   return (
     <div className="flex justify-center flex-col my-40">
-      {sections.map((section) => (<Section
-        subtitle={section.subtitle}
-        title={section.title}
-        text={section.text}
-        imageSrc={section.imageSrc}
-        key={section.title}
-        imageAlt={section.imageAlt}
-        isImageRight={section.isImageRight}
-      />))}
+      <Section
+        subtitle="KRKA"
+        title="Virtualni Krkin laboratorij in reševanje farmacevtskega izziva"
+        imageSrc="/microscope.png"
+        imageAlt="Krka Image"
+      >
+        <div className="p-6">
+          <p>
+            Vabljeni na navdihujočo delavnico z raziskovalci iz Krke! Pridružite
+            se nam na edinstveni delavnici, kjer vam bodo Krkini raziskovalci
+            razkrili skrivnosti razvoja in proizvodnje njihovih generičnih
+            zdravil. S pomočjo mešane resničnosti boste vstopili v svet vrhunske
+            Krkine tehnologije in doživeli proces, kot ga vidijo strokovnjaki.
+          </p>
+
+          <h2 className="mt-4 font-bold">Kaj vas čaka?</h2>
+
+          <p className="mt-2">
+            <span className="font-bold">Ekskluzivni vpogled:</span> Spoznajte,
+            kako poteka razvoj in proizvodnja Krkinih zdravilnih učinkovin ter
+            zdravil, od začetne ideje do končnega izdelka.
+          </p>
+
+          <p className="mt-2">
+            <span className="font-bold">Interaktivna izkušnja:</span> S pomočjo
+            mešane resničnosti boste doživeli tehnologijo, ki poganja Krkine
+            inovacije.
+          </p>
+
+          <p className="mt-2">
+            <span className="font-bold">Reševanje izzivov:</span> Združite moči
+            s študenti različnih smeri in skupaj rešite moderni problem v
+            proizvodnji zdravil.
+          </p>
+
+          <p className="mt-2">
+            <span className="font-bold">Analiza podatkov:</span> Na podlagi
+            analitičnih in tehnoloških podatkov boste odkrili, kako se resnični
+            izzivi rešujejo za izboljšanje procesov. Cilj delavnice je omogočiti
+            študentom, da se povežejo z različnimi smermi ter zberejo izkušnje v
+            analizi podatkov. Pridružite se tej dragoceni izkušnji, spoznajte
+            nove ljudi in se potopite v svet farmacevtske industrije!
+          </p>
+        </div>
+      </Section>
+
+      <Section
+        subtitle="NOVARTIS"
+        title="Postani detektiv v farmacevtski proizvodnji"
+        imageSrc="/zoom.png"
+        imageAlt="Novartis Image"
+      >
+        <div className="p-6">
+          <p>
+            <span className="font-bold">Ste radovedni detektivski tip?</span> Bi
+            se radi preizkusili v vznemirljivem svetu farmacevtske industrije?
+          </p>
+
+          <p>Potem je naša delavnica ravno prava za vas!</p>
+
+          <ul className="list-disc pl-6 mt-2">
+            <li>
+              Na delavnici boste{" "}
+              <span className="font-bold">
+                reševali realen primer iz proizvodnje
+              </span>
+              , kar vam bo omogočilo vpogled v izzive, s katerimi se tehnologij
+              vsakodnevno spopadajo.
+            </li>
+            <li className="mt-2">
+              S pomočjo{" "}
+              <span className="font-bold">analize podatkov in grafov</span> se
+              boste podali na zanimivo raziskovalno pot, kjer boste iskali
+              vzroke za težave in pomagali najti optimalne rešitve.
+            </li>
+            <li className="mt-2">
+              Ne le to, delavnica vam bo omogočila{" "}
+              <span className="font-bold">neposreden stik z Novartisom</span>,
+              enim izmed vodilnih farmacevtskih podjetij. Spoznali boste njihov
+              oddelek M&ST ter se pogovarjali z izkušenimi strokovnjaki za
+              tehnologije in znanost.
+            </li>
+            <li className="mt-2">
+              Ta priložnost vam omogoča, da se poglobite v različne aktivnosti
+              farmacevtske proizvodnje ter pridobite neprecenljive izkušnje, ki
+              vam bodo koristile pri vaši karierni poti.
+            </li>
+          </ul>
+
+          <p className="mt-4">
+            Ne zamudite te edinstvene priložnosti za{" "}
+            <span className="font-bold">
+              odkrivanje skrivnosti farmacevtske industrije in razvijanje svojih
+              detektivskih spretnosti
+            </span>
+            . Pridružite se nam na delavnici!
+          </p>
+        </div>
+      </Section>
+
+      <Section
+        subtitle="PIPISTREL"
+        title="Inovacije v letalstvu s Pipistrel Velis Electro - Brez emisij med oblake"
+        imageSrc="/plane.png"
+        imageAlt="Pipistrel Image"
+      >
+        <div className="p-6">
+          <p>
+            <span className="font-bold">Ste radovedni detektivski tip?</span> Bi
+            se radi preizkusili v vznemirljivem svetu farmacevtske industrije?
+          </p>
+
+          <p>Potem je naša delavnica ravno prava za vas!</p>
+
+          <ul className="list-disc pl-6 mt-2">
+            <li>
+              Na delavnici boste{" "}
+              <span className="font-bold">
+                reševali realen primer iz proizvodnje
+              </span>
+              , kar vam bo omogočilo vpogled v izzive, s katerimi se tehnologij
+              vsakodnevno spopadajo.
+            </li>
+            <li className="mt-2">
+              S pomočjo{" "}
+              <span className="font-bold">analize podatkov in grafov</span> se
+              boste podali na zanimivo raziskovalno pot, kjer boste iskali
+              vzroke za težave in pomagali najti optimalne rešitve.
+            </li>
+            <li className="mt-2">
+              Ne le to, delavnica vam bo omogočila{" "}
+              <span className="font-bold">neposreden stik z Novartisom</span>,
+              enim izmed vodilnih farmacevtskih podjetij. Spoznali boste njihov
+              oddelek M&ST ter se pogovarjali z izkušenimi strokovnjaki za
+              tehnologije in znanost.
+            </li>
+            <li className="mt-2">
+              Ta priložnost vam omogoča, da se poglobite v različne aktivnosti
+              farmacevtske proizvodnje ter pridobite neprecenljive izkušnje, ki
+              vam bodo koristile pri vaši karierni poti.
+            </li>
+          </ul>
+
+          <p className="mt-4">
+            Ne zamudite te edinstvene priložnosti za{" "}
+            <span className="font-bold">
+              odkrivanje skrivnosti farmacevtske industrije in razvijanje svojih
+              detektivskih spretnosti
+            </span>
+            . Pridružite se nam na delavnici!
+          </p>
+        </div>
+      </Section>
+
+      <Section
+        subtitle="TEHNOLOŠKI PARK"
+        title="Raziskovanje nemogočega: Kako XR in AI preoblikujeta svet!"
+        imageSrc="/vr.png"
+        imageAlt="Technological Park Image"
+      >
+        <div className="p-6">
+          <p>
+            Vabimo vas na edinstveno delavnico, kjer boste raziskovali{" "}
+            <span className="font-bold">
+              osnove razširjene resničnosti (XR)
+            </span>{" "}
+            in <span className="font-bold">umetne inteligence (AI)</span>!
+            Strokovnjaki iz Tehnološkega parka vam bodo predstavili osnove XR in
+            AI ter razložili, kako te{" "}
+            <span className="font-bold">
+              tehnologije spreminjajo različne industrije
+            </span>
+            .
+          </p>
+
+          <h2 className="mt-4 font-bold">Kaj boste doživeli?</h2>
+
+          <p className="mt-2">
+            <span className="font-bold">Uvod v XR in AI:</span> Spoznajte
+            ključne pojme in praktične uporabe razširjene resničnosti ter umetne
+            inteligence.
+          </p>
+
+          <p className="mt-2">
+            <span className="font-bold">Uporaba VR očal:</span> Z VR očali boste
+            izkusili interaktivne simulacije in aplikacije, ki prepletajo
+            resnični in digitalni svet.
+          </p>
+
+          <p className="mt-2">
+            <span className="font-bold">Pogled v prihodnost:</span> Pogovorili
+            se bomo o potencialu XR in AI ter njihovem vplivu na razvojne
+            procese v industriji.
+          </p>
+
+          <p className="mt-4">
+            Pridobite nova znanja in odkrijte, kako lahko XR in AI oblikujeta
+            prihodnost!
+          </p>
+        </div>
+      </Section>
     </div>
   );
 }

@@ -1,17 +1,18 @@
 import Image from "next/image";
 import BestButton from "./button-link-100";
+import React from "react";
 export default function Section({
+  children,
   subtitle,
   title,
-  text,
   imageSrc,
   imageAlt,
   isImageRight = true,
   buttons = []
 }: {
+  children: React.ReactNode;
   subtitle: string,
   title: string,
-  text: string,
   imageSrc: string,
   imageAlt: string,
   isImageRight?: boolean;
@@ -25,7 +26,7 @@ export default function Section({
         <h2 className="text-sm md:text-base uppercase">{subtitle}</h2>
         <h1 className="text-3xl lg:text-5xl font-bold uppercase">{title}</h1>
         <p className="text-lg pr-7 mt-5 text-left">
-          {text}
+          {children}
         </p>
         <div className="button-container hidden justify-center pt-16">
           {buttons.map((button, index) => (
