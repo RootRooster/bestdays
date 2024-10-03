@@ -1,7 +1,7 @@
 "use client";
-import Logo from "./logo";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NavBar() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -15,7 +15,12 @@ export default function NavBar() {
         <nav className="flex justify-between items-center w-[92%] mx-auto">
           <div className="pl-5 py-8">
             <Link href="/">
-              <Logo color="white" />
+              <Image
+              src="logo-best.svg"
+              alt="Best logo"
+              width={80}
+              height={80}
+              />
             </Link>
           </div>
           <div
