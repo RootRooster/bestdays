@@ -1,9 +1,9 @@
 import Card from "./components/card";
 import Hero from "./components/hero";
 const cards: {
-  subtitle: {text: string, textClass: string};
-  title: {text:string, textClass: string};
-  text: { text: string; key: string, textClass: string }[];
+  subtitle: { text: string; textClass: string };
+  title: { text: string; textClass: string };
+  text: { text: string; key: string; textClass: string }[];
   image: string;
   dateDay: string;
   dateMonth: string;
@@ -11,15 +11,18 @@ const cards: {
   readMore: string;
 }[] = [
   {
-    subtitle: {text: "Konferenca", textClass:""},
-    title: {text: "Nič več znanstvena fantastika: AI in napredne tehnologije v znanosti", textClass:""},
+    subtitle: { text: "Konferenca", textClass: "" },
+    title: {
+      text: "Nič več znanstvena fantastika: AI in napredne tehnologije v znanosti",
+      textClass: "",
+    },
     text: [
       {
         text: "Konferenca je sestavljena iz simpozija, okroglih miz, stojnic podjetij in Poster minute.",
         key: "2.1",
         textClass: "",
       },
-       {
+      {
         text: "Na simpoziju “AI in napredne tehnologije v znanosti” in okrogli mizi na temo bioinformatike boste lahko prisluhnili strokovnjakom z inštitutov, fakultet in vodilnih podjetij iz industrije. ",
         key: "2.2",
         textClass: "",
@@ -34,11 +37,11 @@ const cards: {
     dateDay: "22",
     dateMonth: "OKT",
     key: "2",
-    readMore: "/conference", 
+    readMore: "/conference",
   },
   {
-    subtitle: {text: "delavnice", textClass:""},
-    title: {text: "Interaktivne delavnice", textClass:""},
+    subtitle: { text: "delavnice", textClass: "" },
+    title: { text: "Interaktivne delavnice", textClass: "" },
     text: [
       {
         text: "Kratke interaktivne delavnice študentom omogočajo, da znotraj 2 ur pridobijo praktično-uporabne izkušnje in znanja, za kar se jim podeli certifikat.",
@@ -55,11 +58,11 @@ const cards: {
     dateDay: "23",
     dateMonth: "OKT",
     key: "1",
-    readMore: "/workshops", 
+    readMore: "/workshops",
   },
   {
-    subtitle: {text: "Študija primera", textClass:""},
-    title: {text: "Case Study", textClass:""},
+    subtitle: { text: "Študija primera", textClass: "" },
+    title: { text: "Case Study", textClass: "" },
     text: [
       {
         text: 'Na študiji primera ("Case Study") lahko študenti pokažejo svoje znanje, sposobnosti reševanja problemov in dela v skupini, za kar lahko osvojijo tudi denarne nagrade.',
@@ -76,18 +79,31 @@ const cards: {
     dateDay: "24",
     dateMonth: "OKT",
     key: "3",
-    readMore: "/study-case", 
+    readMore: "/study-case",
   },
 ];
 export default function Home() {
   return (
     <main>
       <div>
-        <Hero
-          title="Best dnevi znanosti"
-          text="Interdisciplinarni strokovno-izobraževalni dogodek, ki ga organiziramo člani neprofitnega študentskega društva BEST Ljubljana (angl. Board of European Students of Technology). V okviru dogodka organiziramo konferenco, delavnice in študijo primera."
-          buttonText=""
-        />
+        <Hero title="Best dnevi znanosti" buttonText="">
+          <div>
+            <p>
+              <span className="font-bold">
+                Interdisciplinarni strokovno-izobraževalni dogodek
+              </span>
+              , ki ga organiziramo člani neprofitnega študentskega društva{" "}
+              <span className="font-bold">BEST Ljubljana</span> (angl. Board of
+              European Students of Technology).
+            </p>
+
+            <p className="mt-2">
+              V okviru dogodka organiziramo{" "}
+              <span className="font-bold">konferenco, delavnice</span> in{" "}
+              <span className="font-bold">študijo primera</span>.
+            </p>
+          </div>
+        </Hero>
       </div>
       {cards.map((card) => (
         <Card
