@@ -9,6 +9,7 @@ const cards: {
   dateMonth: string;
   key: string;
   readMore: string;
+  register: string;
 }[] = [
   {
     subtitle: { text: "Konferenca", textClass: "" },
@@ -38,6 +39,7 @@ const cards: {
     dateMonth: "OKT",
     key: "2",
     readMore: "/conference",
+    register: "https://forms.gle/d7zSiyPxhuyjQqjC7"
   },
   {
     subtitle: { text: "delavnice", textClass: "" },
@@ -59,6 +61,7 @@ const cards: {
     dateMonth: "OKT",
     key: "1",
     readMore: "/workshops",
+    register: "https://forms.gle/ek6Gvo43GRP4GXNm6"
   },
   {
     subtitle: { text: "Študija primera", textClass: "" },
@@ -80,6 +83,7 @@ const cards: {
     dateMonth: "OKT",
     key: "3",
     readMore: "/study-case",
+    register: "https://forms.gle/C56YNVq4RQXz5Rxm6"
   },
 ];
 export default function Home() {
@@ -115,6 +119,7 @@ export default function Home() {
           dateDay={card.dateDay}
           dateMonth={card.dateMonth}
           key={card.key}
+          register={card.register}
         />
       ))}
     </main>

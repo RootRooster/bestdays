@@ -1,5 +1,4 @@
 import Card from "../components/team-card";
-import Image from "next/image";
 
 export default function Page() {
   const teamMembers = [

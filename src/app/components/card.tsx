@@ -15,6 +15,7 @@ export default function Card({
   dateDay,
   dateMonth,
   readMore,
+  register,
 }: {
   subtitle: { text: string; textClass: string };
   title: { text: string; textClass: string };
@@ -23,6 +24,7 @@ export default function Card({
   dateDay: string;
   dateMonth: string;
   readMore: string;
+  register: string;
 }) {
   return (
     <div className="w-100 flex justify-center">
@@ -55,7 +57,7 @@ export default function Card({
             </div>
             {/*pomojem je treba buttonse gor prestavt tud?*/}
             <div className="buttons mx-5 flex justify-center gap-5 mb-5">
-              <a href="https://linktr.ee/best_dnevi_znanosti">
+              <a href={register}>
                 <div className="flex justify-center bg-best-blue-100 text-best-blue-900 rounded-3xl px-7 py-3 sm:px-14 md:px-7">
                   <div className="uppercase font-bold text-sm sm:text-base md:text-sm">
                     Prijavi se
