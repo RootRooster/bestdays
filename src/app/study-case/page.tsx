@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="flex flex-col">
       <Section
-        title="Spoprijamanje z odstopi v aseptičnem okolju"
+        title="Spoprijemanje z odstopi v aseptičnem okolju"
         subtitle="LEK"
         imageSrc="/book.png"
         imageAlt="book and chem"
