@@ -138,9 +138,6 @@ export default function Page() {
         </div>
         <div className="paragraph-title">
           <h3 className="text-3xl md:text-4xl">sklop Biokemija</h3>
-        </div>
-        <div className="paragraph-title">
-          <h3 className="text-3xl md:text-4xl">slop - Bioinformatika</h3>
           <div className="pt-6 pb-12">
             <p>
               Od biokemije raka do strukturne biologije, umetna inteligenca
@@ -192,7 +189,7 @@ export default function Page() {
           </div>
         </div>
         <div className="paragraph-title">
-          <h3 className="text-3xl md:text-4xl">sklop Biokemija</h3>
+          <h3 className="text-3xl md:text-4xl">okrogla miza - Bioinformatika: Most med celico in tehnologijo</h3>
         </div>
         <div className="paragraph-title">
           <div className="pt-6 pb-12">
