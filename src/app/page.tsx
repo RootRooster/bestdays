@@ -73,7 +73,7 @@ const cards: {
         textClass: "",
       },
       {
-        text: "Organiziramo jo v sodelovanju z Lek-om.",
+        text: "Organiziramo jo v sodelovanju z Lekom.",
         key: "3.2",
         textClass: "",
       },
