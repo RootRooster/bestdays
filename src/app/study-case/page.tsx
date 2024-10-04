@@ -2,7 +2,7 @@ import Section from "../components/section";
 
 export default function Page() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-24">
       <Section
         title="Spoprijemanje z odstopi v aseptičnem okolju"
         subtitle="LEK"
