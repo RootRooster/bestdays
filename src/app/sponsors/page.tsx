@@ -1,16 +1,22 @@
 import Bubble from "../components/sponsor-bubble";
 export default function Page() {
-  const goldSponsors = [{ name: "LEK", url: "/logos/lek.png" }];
+  const goldSponsors = [
+    { name: "LEK", url: "/logos/lek.png", linkurl: "/sponsors/lek" },
+  ]; 
   const silverSponsors = [
-    { name: "KRKA", url: "/logos/krka.png" },
-    { name: "NOVARIS", url: "/logos/novaris.svg" },
-    { name: "PIPISTREL", url: "/logos/pipistrel.png" },
+    { name: "KRKA", url: "/logos/krka.png", linkurl: "/sponsors/krka" },
+    { name: "NOVARIS", url: "/logos/novaris.svg", linkurl: "/sponsors/novartis" },
+    {
+      name: "PIPISTREL",
+      url: "/logos/pipistrel.png",
+      linkurl: "/sponsors/pipistrel",
+    },
   ];
   const bronzeSponsors = [
-    { name: "IJS", url: "/logos/ijs.jpg" },
-    { name: "IXTLAN", url: "/logos/ixtlan.png" },
-    { name: "METRONIK", url: "/logos/metronik.svg" },
-    { name: "NIB", url: "/logos/nib.png" },
+    { name: "IJS", url: "/logos/ijs.jpg", linkurl: "/sponsors/ijs" },
+    { name: "IXTLAN", url: "/logos/ixtlan.png", linkurl: "" },
+    { name: "METRONIK", url: "/logos/metronik.svg", linkurl: "/sponsors/metronik" },
+    { name: "NIB", url: "/logos/nib.png", linkurl: "/sponsors/nib" },
   ];
   return (
     <>
@@ -24,6 +30,7 @@ export default function Page() {
               key={sponsor.name}
               name={sponsor.name}
               imageUrl={sponsor.url}
+              linkUrl={sponsor.linkurl}
               size="96"
               borderColor="border-sky-400"
             />
@@ -38,6 +45,7 @@ export default function Page() {
               key={sponsor.name}
               name={sponsor.name}
               imageUrl={sponsor.url}
+              linkUrl={sponsor.linkurl}
               size="72"
               borderColor="border-yellow-500"
             />
@@ -52,6 +60,7 @@ export default function Page() {
               key={sponsor.name}
               name={sponsor.name}
               imageUrl={sponsor.url}
+              linkUrl={sponsor.linkurl}
               size="56"
               borderColor="border-slate-400"
             />
