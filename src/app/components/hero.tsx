@@ -30,12 +30,7 @@ export default function Hero({
           <div
             className={`px-20 duration-300 overflow-hidden ${isHidden ? "h-20" : "h-72"} md:h-auto`}
           >
-            <p
-              className="text-lg md:text-2xl"
-              style={{ paddingBottom: "40px" }}
-            >
               {children}
-            </p>
           </div>
           <div className="md:hidden text-best-blue-900 mt-5">
             <button onClick={toggleHidden}>
