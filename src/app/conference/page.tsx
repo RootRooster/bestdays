@@ -111,7 +111,7 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Prof. dr. Ljučo Todorovski</span> s
+              <span className="font-bold">Prof. dr. Ljupčo Todorovski</span> s
               Fakultete za matematiko in fiziko bo predstavil, kako s strojnim
               učenjem iščejo najpreprostejši matematični opis kompleksnih
               sistemov. S poenostavitvijo znanstvenikom povečajo dostopnost in
@@ -155,7 +155,7 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Dr. Ajša Ljubetič</span> s Kemijskega
+              <span className="font-bold">Dr. Ajasja Ljubetič</span> s Kemijskega
               inštituta nas bo popeljala na področje strukturne biologije in
               predstavila, kako lahko z modernimi metodami umetne inteligence
               natančno popolnoma nove proteine, ki se v naravi ne pojavljajo.
