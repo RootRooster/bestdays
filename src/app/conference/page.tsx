@@ -155,7 +155,7 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Dr. Ajasja Ljubetič</span>s Kemijskega
+              <span className="font-bold">Dr. Ajasja Ljubetič</span> s Kemijskega
               inštituta nas bo popeljal na področje strukturne biologije in
               predstavil, kako lahko z modernimi metodami umetne inteligence
               načrtujejo popolnoma nove proteine, ki se v naravi ne pojavljajo.
@@ -205,7 +205,7 @@ export default function Page() {
               </span>{" "}
               Pridružili se nam bodo strokovnjaki področja:{" "}
               <span className="font-bold">prof. dr. Sašo Džeroski</span> z
-              Inštituta &quot;Jožef Stefan&quot;,{" "}
+              Instituta &quot;Jožef Stefan&quot;,{" "}
               <span className="font-bold">izr. prof. dr. Miha Moškon</span> s
               Fakultete za računalništvo in informatiko,{" "}
               <span className="font-bold">doc. dr. Anže Županič</span> z
