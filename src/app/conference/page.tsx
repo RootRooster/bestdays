@@ -120,21 +120,20 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Tadej Magajna</span>
-              iz podjetja Lek bo govoril o izzivih pri uporabi znanja,
-              pridobljenega med študijem, v hitro razvijajočem svetu umetne
-              inteligence. Poudaril bo nevarnosti &quot;know-it-all&quot;
-              miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih
-              ved ter vlogo odprtokodnih orodij in skupnosti kot ključnega
-              elementa za uspeh AI sistemov.
+              <span className="font-bold">Tadej Magajna</span> iz podjetja Lek
+              bo govoril o izzivih pri uporabi znanja, pridobljenega med
+              študijem, v hitro razvijajočem svetu umetne inteligence. Poudaril
+              bo nevarnosti &quot;know-it-all&quot; miselnosti v industriji,
+              pomen temeljnih znanj iz naravoslovnih ved ter vlogo odprtokodnih
+              orodij in skupnosti kot ključnega elementa za uspeh AI sistemov.
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Andrej P. Škraba</span>
-              bo predstavil Astra AI, prvega slovenskega AI tutorja za
-              matematiko, ki z uporabo umetne inteligence pomaga pri učenju in
-              razumevanju matematičnih konceptov. Po njegovi predstavitvi bo
-              sledil krajši Q&A, kjer bo odgovarjal na vprašanja študentov.
+              <span className="font-bold">Andrej P. Škraba</span> bo predstavil
+              Astra AI, prvega slovenskega AI tutorja za matematiko, ki z
+              uporabo umetne inteligence pomaga pri učenju in razumevanju
+              matematičnih konceptov. Po njegovi predstavitvi bo sledil krajši
+              Q&A, kjer bo odgovarjal na vprašanja študentov.
             </p>
           </div>
         </div>
@@ -174,16 +173,16 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Prof. dr. Uroš Petrovič</span>
-              bo govoril o nedavnem napredku na področju sintezne biologije,
+              <span className="font-bold">Prof. dr. Uroš Petrovič</span> bo
+              govoril o nedavnem napredku na področju sintezne biologije,
               predvsem v kombinatorni genetiki, kjer strojno učenje omogoča
               napovedovanje fenotipov poligenskih bolezni na osnovi velikih
               podatkovnih množic.
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Izr. prof. dr. Aleš Ručigaj</span>
-              iz podjetja Novartis bo prikazal, kako umetna inteligenca podpira
+              <span className="font-bold">Izr. prof. dr. Aleš Ručigaj</span> iz
+              podjetja Novartis bo prikazal, kako umetna inteligenca podpira
               razvoj bioloških molekul v farmacevtski industriji – od
               načrtovanja učinkovin, optimizacije proizvodnih procesov do
               simulacij celotnega poteka razvoja.
