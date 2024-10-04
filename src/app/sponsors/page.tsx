@@ -2,10 +2,14 @@ import Bubble from "../components/sponsor-bubble";
 export default function Page() {
   const goldSponsors = [
     { name: "LEK", url: "/logos/lek.png", linkurl: "/sponsors/lek" },
+    { name: "PARK", url: "/logos/park.svg", linkurl: "/sponsors/park" },
+    { name: "GENI", url: "/logos/lek.png", linkurl: "/sponsors/geni" },
+    { name: "TECH", url: "/logos/tech.pdf", linkurl: "/sponsors/tech" },
   ]; 
   const silverSponsors = [
     { name: "KRKA", url: "/logos/krka.png", linkurl: "/sponsors/krka" },
     { name: "NOVARIS", url: "/logos/novaris.svg", linkurl: "/sponsors/novartis" },
+    { name: "NFL", url: "/logos/nfl.png", linkurl: "/sponsors/nfl" },
     {
       name: "PIPISTREL",
       url: "/logos/pipistrel.png",
@@ -24,7 +28,7 @@ export default function Page() {
         <h1 className="md:text-7xl text-5xl text-center font-bold uppercase mt-32">
           diamantni sponzor
         </h1>
-        <div className="w-full mb-52 mt-20 md:flex md:flex-row justify-center lg:px-32">
+        <div className="w-full mb-52 mt-20 md:grid md:grid-cols-3 justify-center lg:px-32">
           {goldSponsors.map((sponsor) => (
             <Bubble
               key={sponsor.name}
