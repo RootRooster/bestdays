@@ -25,9 +25,9 @@ export default function Section({
       <div className="lg:w-1/2 w-full md:h-[100%]">
         <h2 className="text-sm md:text-base uppercase">{subtitle}</h2>
         <h1 className="text-3xl lg:text-5xl font-bold uppercase">{title}</h1>
-        <p className="text-lg pr-7 mt-5 text-left">
+        <div className="text-lg pr-7 mt-5 text-left">
           {children}
-        </p>
+        </div>
         <div className="button-container hidden justify-center pt-16">
           {buttons.map((button, index) => (
           <BestButton
