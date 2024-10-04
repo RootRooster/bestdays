@@ -13,7 +13,8 @@ export default function Page() {
         <div className="mb-20 md:text-lg">
           <p>
             Konferenca je sestavljena iz simpozija, okrogle mize, stojnic
-            podjetij in Poster minute. <br />
+            podjetij in Poster minute.
+            <br />
             <br />
             Na simpoziju ”AI in napredne tehnologije v znanosti” in okrogli mizi
             na temo bioinformatike boste lahko prisluhnili strokovnjakom z
@@ -52,8 +53,8 @@ export default function Page() {
               Fakultete za kemijo in kemijsko tehnologijo nas bo popeljal v svet
               kemijskega inženirstva, kjer s pomočjo modeliranja in računalniške
               dinamike tekočin (CFD) simulirajo pretok tekočin skozi reaktorske
-              cevi ter napovedujejo napredne reakcijske sisteme in njihove
-              rezultate.
+              cevi ter natančno napovedujejo kemijske reakcije in premike
+              molekul.
             </p>
 
             <p className="mt-2">
@@ -119,20 +120,21 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Tadej Magajna</span> iz podjetja Lek
-              bo govoril o izzivih pri uporabi znanja, pridobljenega med
-              študijem, v hitro razvijajočem svetu umetne inteligence. Poudaril
-              bo nevarnosti “know-it-all” miselnosti v industriji, pomen
-              prilagodljivosti in nazorslavnosti v teh vlog ter dodajanje novih
-              orodij in skupnosti kot ključnega elementa za uspeh AI sistemov.
+              <span className="font-bold">Tadej Magajna</span>
+              iz podjetja Lek bo govoril o izzivih pri uporabi znanja,
+              pridobljenega med študijem, v hitro razvijajočem svetu umetne
+              inteligence. Poudaril bo nevarnosti &quot;know-it-all&quot;
+              miselnosti v industriji, pomen temeljnih znanj iz naravoslovnih
+              ved ter vlogo odprtokodnih orodij in skupnosti kot ključnega
+              elementa za uspeh AI sistemov.
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Andrej P. Škraba</span> bo predstavil
-              Astra AI, prvega slovenskega AI tutorja za matematiko, ki z
-              uporabo umetne inteligence pomaga pri učenju in razumevanju
-              matematičnih konceptov. Po njegovi predstavitvi bo sledil krajši
-              Q&A, kjer bo odgovarjal na vprašanja študentov.
+              <span className="font-bold">Andrej P. Škraba</span>
+              bo predstavil Astra AI, prvega slovenskega AI tutorja za
+              matematiko, ki z uporabo umetne inteligence pomaga pri učenju in
+              razumevanju matematičnih konceptov. Po njegovi predstavitvi bo
+              sledil krajši Q&A, kjer bo odgovarjal na vprašanja študentov.
             </p>
           </div>
         </div>
@@ -148,19 +150,19 @@ export default function Page() {
 
             <p className="mt-2">
               <span className="font-bold">Doc. dr. Barbara Breznik</span> z
-              Nacionalnega inštituta za biologijo bo predstavila raziskovanje
-              Gliobanka, inovativne tumorske modele v laboratoriju, metode
+              Nacionalnega inštituta za biologijo bo predstavila raziskovalno
+              Gliobanko, inovativne tumorske modele v laboratoriju, metode
               prostorske biologije in računalniške pristope, s katerimi iščejo
-              odgovore od agresivnih tumorjev na zdravljenje.
+              odgovore o odpornosti agresivnih tumorjev na zdravljenje.
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Dr. Ajasja Ljubetič</span> s Kemijskega
-              inštituta nas bo popeljal na področje strukturne biologije in
-              predstavil, kako lahko z modernimi metodami umetne inteligence
-              načrtujejo popolnoma nove proteine, ki se v naravi ne pojavljajo.
-              Novi proteini so izjemno stabilni in se dobro izražajo, zato lahko
-              z njimi rešujemo sodobne izzive.
+              <span className="font-bold">Dr. Ajasja Ljubetič</span> s
+              Kemijskega inštituta nas bo popeljal na področje strukturne
+              biologije in predstavil, kako lahko z modernimi metodami umetne
+              inteligence načrtujejo popolnoma nove proteine, ki se v naravi ne
+              pojavljajo. Novi proteini so izjemno stabilni in se dobro
+              izražajo, zato lahko z njimi rešujemo sodobne izzive.
             </p>
 
             <p className="mt-2">
@@ -172,18 +174,18 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Prof. dr. Uroš Petrovič</span> bo
-              govoril o nedavnem napredku na področju sintetične biologije,
+              <span className="font-bold">Prof. dr. Uroš Petrovič</span>
+              bo govoril o nedavnem napredku na področju sintezne biologije,
               predvsem v kombinatorni genetiki, kjer strojno učenje omogoča
               napovedovanje fenotipov poligenskih bolezni na osnovi velikih
               podatkovnih množic.
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Izr. prof. dr. Aleš Ručigaj</span> iz
-              podjetja Novartis bo prikazal, kako umetna inteligenca podpira
+              <span className="font-bold">Izr. prof. dr. Aleš Ručigaj</span>
+              iz podjetja Novartis bo prikazal, kako umetna inteligenca podpira
               razvoj bioloških molekul v farmacevtski industriji – od
-              raziskovanja učinkovink, optimizacije proizvodnih procesov do
+              načrtovanja učinkovin, optimizacije proizvodnih procesov do
               simulacij celotnega poteka razvoja.
             </p>
           </div>
@@ -198,8 +200,9 @@ export default function Page() {
             <p>
               Če si rad v laboratoriju, ali pa te malo manj pritegne, se lahko
               vsi strinjamo, da je dandanes laboratorijsko delo brez
-              računalniške podpore skoraj nemogoče.{" "}
+              računalniške podpore skoraj nemogoče.
               <span className="font-bold">
+                {" "}
                 Na okrogli mizi BEST dnevov znanosti bo tekla beseda o
                 bioinformatiki.
               </span>{" "}
