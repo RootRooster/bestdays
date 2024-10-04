@@ -155,10 +155,10 @@ export default function Page() {
             </p>
 
             <p className="mt-2">
-              <span className="font-bold">Dr. Ajasja Ljubetič</span> s Kemijskega
-              inštituta nas bo popeljala na področje strukturne biologije in
-              predstavila, kako lahko z modernimi metodami umetne inteligence
-              natančno popolnoma nove proteine, ki se v naravi ne pojavljajo.
+              <span className="font-bold">Dr. Ajasja Ljubetič</span>s Kemijskega
+              inštituta nas bo popeljal na področje strukturne biologije in
+              predstavil, kako lahko z modernimi metodami umetne inteligence
+              načrtujejo popolnoma nove proteine, ki se v naravi ne pojavljajo.
               Novi proteini so izjemno stabilni in se dobro izražajo, zato lahko
               z njimi rešujemo sodobne izzive.
             </p>
@@ -189,7 +189,9 @@ export default function Page() {
           </div>
         </div>
         <div className="paragraph-title">
-          <h3 className="text-3xl md:text-4xl">okrogla miza - Bioinformatika: Most med celico in tehnologijo</h3>
+          <h3 className="text-3xl md:text-4xl">
+            okrogla miza - Bioinformatika: Most med celico in tehnologijo
+          </h3>
         </div>
         <div className="paragraph-title">
           <div className="pt-6 pb-12">
