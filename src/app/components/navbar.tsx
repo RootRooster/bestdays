@@ -16,10 +16,10 @@ export default function NavBar() {
           <div className="pl-5 py-8">
             <Link href="/">
               <Image
-              src="logo-best.svg"
-              alt="Best logo"
-              width={80}
-              height={80}
+                src="logo-best.svg"
+                alt="Best logo"
+                width={80}
+                height={80}
               />
             </Link>
           </div>
@@ -43,6 +43,15 @@ export default function NavBar() {
                   href="/sponsors"
                 >
                   PARTNERJI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={handleToggle}
+                  className="hover:text-gray-300"
+                  href="/program"
+                >
+                 PROGRAM 
                 </Link>
               </li>
               <li>
