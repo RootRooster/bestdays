@@ -22,13 +22,14 @@ export default function Page() {
       role: "Ekipa za PR",
       image: "Lucija.jpg",
     },
-    { name: "Manca Simončič", role: "Logistika", image: "Manca.jpg" },
-    { name: "Nik Cadez", role: "IT", image: "Nik.jpg" },
     {
-      name: "Deni Krasna",
+      name: "Deni Krašna",
       role: "Ekipa za PR",
       image: "Deni.jpg",
     },
+
+    { name: "Manca Simončič", role: "Logistika", image: "Manca.jpg" },
+    { name: "Nik Čadež", role: "IT", image: "Nik.jpg" },
   ];
   return (
     <>

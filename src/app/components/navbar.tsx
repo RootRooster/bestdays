@@ -40,18 +40,18 @@ export default function NavBar() {
                 <Link
                   onClick={handleToggle}
                   className="hover:text-gray-300"
-                  href="/sponsors"
+                  href="/program"
                 >
-                  PARTNERJI
+                 PROGRAM 
                 </Link>
               </li>
               <li>
                 <Link
                   onClick={handleToggle}
                   className="hover:text-gray-300"
-                  href="/program"
+                  href="/sponsors"
                 >
-                 PROGRAM 
+                  PARTNERJI
                 </Link>
               </li>
               <li>
