@@ -3,8 +3,8 @@ export default function Page() {
   const goldSponsors = [
     { name: "LEK", url: "/logos/lek.png", linkurl: "/sponsors/lek" },
     { name: "PARK", url: "/logos/park.svg", linkurl: "/sponsors/park" },
-    { name: "GENI", url: "/logos/lek.png", linkurl: "/sponsors/geni" },
-    { name: "TECH", url: "/logos/tech.pdf", linkurl: "/sponsors/tech" },
+    { name: "GENI", url: "/logos/geni.png", linkurl: "/sponsors/geni" },
+    { name: "TECH", url: "/logos/tech.svg", linkurl: "/sponsors/tech" },
   ]; 
   const silverSponsors = [
     { name: "KRKA", url: "/logos/krka.png", linkurl: "/sponsors/krka" },
