@@ -6,7 +6,6 @@ export default function Page() {
   const silverSponsors = [
     { name: "KRKA", url: "/logos/krka.png", linkurl: "/sponsors/krka" },
     { name: "NOVARIS", url: "/logos/novaris.svg", linkurl: "/sponsors/novartis" },
-    { name: "NFL", url: "/logos/nfl.png", linkurl: "/sponsors/nfl" },
     {
       name: "PIPISTREL",
       url: "/logos/pipistrel.png",
@@ -19,6 +18,7 @@ export default function Page() {
   const bronzeSponsors = [
     { name: "IJS", url: "/logos/ijs.jpg", linkurl: "/sponsors/ijs" },
     { name: "IXTLAN", url: "/logos/ixtlan.png", linkurl: "" },
+    { name: "NFL", url: "/logos/nfl.png", linkurl: "/sponsors/nfl" },
     { name: "METRONIK", url: "/logos/metronik.svg", linkurl: "/sponsors/metronik" },
     { name: "NIB", url: "/logos/nib.png", linkurl: "/sponsors/nib" },
   ];
