@@ -28,7 +28,7 @@ export default function Page() {
         <h1 className="md:text-7xl text-5xl text-center font-bold uppercase mt-32">
           diamantni sponzor
         </h1>
-        <div className="w-full mb-52 mt-20 md:grid md:grid-cols-3 justify-center lg:px-32">
+        <div className="w-full mb-52 mt-20 md:grid md:grid-cols-1 justify-center lg:px-32">
           {goldSponsors.map((sponsor) => (
             <Bubble
               key={sponsor.name}
