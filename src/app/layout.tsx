@@ -3,6 +3,7 @@ import { Jost } from "next/font/google";
 import "./globals.scss";
 import NavBar from "./components/navbar";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react";
 
 const jost = Jost({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -70,6 +71,7 @@ export default function RootLayout({
           <div className="-z-10 absolute top-[-45vh] left-[-45vw] radialbestblue900 w-[90vw] h-[90vh] rotate-45 animate-[pulse_4s_ease-in-out_infinite]"></div>
         </div>
         <NavBar />
+        <Analytics/>
         {children}
         <footer className="bottom-0">
           <div className="flex w-full h-32 bg-best-blue-900 justify-center items-center gap-20">
