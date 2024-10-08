@@ -34,7 +34,7 @@ function DayOne() {
         <p>15:15 doc. dr. Barbara Breznik (NIB)</p>
         <p>15:35 dr. Ajasja Ljubetič (Kemijski inštitut)</p>
         <p>15:55 asist. Martin Špendl (FRI)</p>
-        <p>16:15 prof. dr. Uroš Petrovič (BF/IJS/MF)</p>
+        <p>16:15 prof. dr. Uroš Petrovič (BF/IJS)</p>
         <p>16:35 izr. prof dr. Aleš Ručigaj (Novartis)</p>
         <br />
         <p>17:00 - 17:15 odmor</p>
