@@ -1,7 +1,7 @@
 import Bubble from "../components/sponsor-bubble";
 export default function Page() {
   const goldSponsors = [
-    { name: "LEK", url: "/logos/lek.png", linkurl: "/sponsors/lek" },
+    { name: "LEK", url: "/logos/lek.png", linkurl: "" },
   ]; 
   const silverSponsors = [
     { name: "KRKA", url: "/logos/krka.png", linkurl: "/sponsors/krka" },
@@ -9,18 +9,18 @@ export default function Page() {
     {
       name: "PIPISTREL",
       url: "/logos/pipistrel.png",
-      linkurl: "/sponsors/pipistrel",
+      linkurl: "",
     },
     { name: "PARK", url: "/logos/park.svg", linkurl: "/sponsors/park" },
     { name: "GENI", url: "/logos/geni.png", linkurl: "/sponsors/geni" },
     { name: "TECH", url: "/logos/tech.svg", linkurl: "/sponsors/tech" },
   ];
   const bronzeSponsors = [
-    { name: "IJS", url: "/logos/ijs.jpg", linkurl: "/sponsors/ijs" },
+    { name: "IJS", url: "/logos/ijs.jpg", linkurl: "" },
     { name: "IXTLAN", url: "/logos/ixtlan.png", linkurl: "" },
-    { name: "NFL", url: "/logos/nfl.png", linkurl: "/sponsors/nfl" },
+    { name: "NFL", url: "/logos/nfl.png", linkurl: "" },
     { name: "METRONIK", url: "/logos/metronik.svg", linkurl: "/sponsors/metronik" },
-    { name: "NIB", url: "/logos/nib.png", linkurl: "/sponsors/nib" },
+    { name: "NIB", url: "/logos/nib.png", linkurl: "" },
   ];
   return (
     <>
