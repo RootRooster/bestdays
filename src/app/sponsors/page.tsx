@@ -65,7 +65,7 @@ export default function Page() {
               name={sponsor.name}
               imageUrl={sponsor.url}
               linkUrl={sponsor.linkurl}
-              size="56"
+              size="52"
               borderColor="border-slate-400"
             />
           ))}
