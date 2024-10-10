@@ -76,7 +76,6 @@ export default function Card({
           <div className="md:hidden">
             <div className="rounded-xl relative w-full h-auto">
               <Image
-                layout="responsive"
                 src={image}
                 width={400}
                 height={400}
@@ -89,7 +88,6 @@ export default function Card({
             <div className="rounded-xl w-full h-full">
               <Image
                 className="w-full h-full rounded-xl"
-                layout="object-fill"
                 src={image}
                 width={400}
                 height={400}

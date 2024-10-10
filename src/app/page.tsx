@@ -1,5 +1,8 @@
+"use client";
 import Card from "./components/card";
 import Hero from "./components/hero";
+import Popin from "./components/popin";
+
 const cards: {
   subtitle: { text: string; textClass: string };
   title: { text: string; textClass: string };
@@ -68,7 +71,7 @@ const cards: {
       title: { text: "Case Study", textClass: "" },
       text: [
         {
-          text: 'Na študiji primera (“Case Study”) lahko študenti pokažejo svoje znanje, sposobnosti reševanja problemov in dela v skupini, za kar lahko osvojijo tudi denarne nagrade.',
+          text: "Na študiji primera (“Case Study”) lahko študenti pokažejo svoje znanje, sposobnosti reševanja problemov in dela v skupini, za kar lahko osvojijo tudi denarne nagrade.",
           key: "3.1",
           textClass: "",
         },
@@ -89,7 +92,7 @@ const cards: {
 export default function Home() {
   return (
     <main>
-      <div>
+      <Popin>
         <Hero title="Best dnevi znanosti" buttonText="">
           <div>
             <p>
@@ -108,19 +111,21 @@ export default function Home() {
             </p>
           </div>
         </Hero>
-      </div>
+      </Popin>
       {cards.map((card) => (
-        <Card
-          subtitle={card.subtitle}
-          title={card.title}
-          text={card.text}
-          image={card.image}
-          readMore={card.readMore}
-          dateDay={card.dateDay}
-          dateMonth={card.dateMonth}
-          key={card.key}
-          register={card.register}
-        />
+        <Popin key={card.key}>
+          <Card
+            subtitle={card.subtitle}
+            title={card.title}
+            text={card.text}
+            image={card.image}
+            readMore={card.readMore}
+            dateDay={card.dateDay}
+            dateMonth={card.dateMonth}
+            key={card.key}
+            register={card.register}
+          />
+        </Popin>
       ))}
     </main>
   );
