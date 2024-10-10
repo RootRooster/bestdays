@@ -72,7 +72,7 @@ function DayTwo() {
         </p>
         <br />
         <br />
-        <p>seminarska soba 2072 (2b)</p>
+        <p className="italic">seminarska soba 2072 (2b)</p>
         <br />
         <p>
           14.15 - 16.15 <span className="font-bold">Tehnološki park</span>
