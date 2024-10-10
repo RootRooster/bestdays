@@ -19,12 +19,12 @@ const cards: {
       },
       text: [
         {
-          text: "Konferenca je sestavljena iz simpozija, okroglih miz, stojnic podjetij in Poster minute.",
+          text: "Konferenca je sestavljena iz simpozija, okrogle mize, stojnic podjetij in Poster minute.",
           key: "2.1",
           textClass: "",
         },
         {
-          text: "Na simpoziju “AI in napredne tehnologije v znanosti” in okrogli mizi na temo bioinformatike boste lahko prisluhnili strokovnjakom z inštitutov, fakultet in vodilnih podjetij iz industrije. ",
+          text: "Na simpoziju “AI in napredne tehnologije v znanosti” in okrogli mizi na temo bioinformatike boste lahko prisluhnili strokovnjakom z inštitutov, fakultet in vodilnih podjetij iz industrije.",
           key: "2.2",
           textClass: "",
         },
@@ -46,7 +46,7 @@ const cards: {
       title: { text: "Interaktivne delavnice", textClass: "" },
       text: [
         {
-          text: "Kratke interaktivne delavnice študentom omogočajo, da znotraj 2 ur pridobijo praktično-uporabne izkušnje in znanja, za kar se jim podeli certifikat.",
+          text: "Kratke interaktivne delavnice študentom omogočajo, da znotraj 2 ur pridobijo praktično-uporabne izkušnje in znanja, za kar se jim podeli certifikat. Število mest je omejeno.",
           key: "1.1",
           textClass: "",
         },
@@ -68,7 +68,7 @@ const cards: {
       title: { text: "Case Study", textClass: "" },
       text: [
         {
-          text: 'Na študiji primera ("Case Study") lahko študenti pokažejo svoje znanje, sposobnosti reševanja problemov in dela v skupini, za kar lahko osvojijo tudi denarne nagrade.',
+          text: 'Na študiji primera (“Case Study”) lahko študenti pokažejo svoje znanje, sposobnosti reševanja problemov in dela v skupini, za kar lahko osvojijo tudi denarne nagrade.',
           key: "3.1",
           textClass: "",
         },
