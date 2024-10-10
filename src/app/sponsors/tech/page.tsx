@@ -4,7 +4,7 @@ export default function Page() {
     <>
       <CompanyP>
         <div>
-          <h1 className="mt-12 text-4xl">Proton PharmaTech</h1>
+          <h1 className="mt-12 text-4xl">Porton PharmaTech</h1>
           <p>ENG:</p>
           <p className="">
             Founded in 2022, Porton PharmaTech d.o.o., Slovenia, is the European
