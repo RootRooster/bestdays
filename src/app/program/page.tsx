@@ -10,7 +10,7 @@ function DayOne() {
           <h1 className="">Osrednja stavba X, predavalnica A</h1>
         </div>
         <br />
-        <p>10:00 Uvodni nagogor</p>
+        <p>10:00 Uvodni nagovor</p>
         <br />
         <h2 className="text-2xl">sklop Kemija in kemijsko inženirstvo</h2>
         <p>10:15 izr. prof. dr. Blaž Likozar (Kemijski inštitut)</p>
