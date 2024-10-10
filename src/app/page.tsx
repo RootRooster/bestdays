@@ -113,7 +113,6 @@ export default function Home() {
         </Hero>
       </Popin>
       {cards.map((card) => (
-        <Popin key={card.key}>
           <Card
             subtitle={card.subtitle}
             title={card.title}
@@ -125,7 +124,6 @@ export default function Home() {
             key={card.key}
             register={card.register}
           />
-        </Popin>
       ))}
     </main>
   );
