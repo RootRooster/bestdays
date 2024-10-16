@@ -176,18 +176,21 @@ export default function Page() {
           <p className="mt-2 font-bold">Kaj boste doživeli?</p>
           <br />
           <p className="mt-2">
-            <span className="font-bold">Uvod v XR in AI</span>: Spoznajte ključne pojme in praktične uporabe
-            razširjene resničnosti ter umetne inteligence.
+            <span className="font-bold">Uvod v XR in AI</span>: Spoznajte
+            ključne pojme in praktične uporabe razširjene resničnosti ter umetne
+            inteligence.
           </p>
           <br />
           <p className="mt-2">
-            <span className="font-bold">Uporaba VR očal</span>: Z VR očali boste izkusili interaktivne simulacije
-            in aplikacije, ki prepletajo resnični in digitalni svet.
+            <span className="font-bold">Uporaba VR očal</span>: Z VR očali boste
+            izkusili interaktivne simulacije in aplikacije, ki prepletajo
+            resnični in digitalni svet.
           </p>
           <br />
           <p className="mt-2">
-            <span className="font-bold">Pogled v prihodnost</span>: Pogovorili se bomo o potencialu XR in AI ter
-            njihovem vplivu na razvojne procese v industriji.
+            <span className="font-bold">Pogled v prihodnost</span>: Pogovorili
+            se bomo o potencialu XR in AI ter njihovem vplivu na razvojne
+            procese v industriji.
           </p>
           <br />
           <p className="mt-2">
@@ -197,8 +200,17 @@ export default function Page() {
         </div>
         <br />
 
-      <div className="text-5xl font-bold">Število mest na delavnicah je omejeno!</div>
+        <div className="text-5xl font-bold">
+          Število mest na delavnicah je omejeno!
+        </div>
       </Section>
+      <a href="https://forms.gle/ek6Gvo43GRP4GXNm6">
+        <div className="flex justify-center m-24 bg-best-blue-100 text-best-blue-900 rounded-3xl px-7 py-3 sm:px-14 md:px-7">
+          <div className="uppercase font-bold text-xs sm:text-base md:text-sm">
+            Prijavi se
+          </div>
+        </div>
+      </a>
     </div>
   );
 }

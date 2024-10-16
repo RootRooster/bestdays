@@ -53,6 +53,14 @@ export default function Page() {
           </p>
         </div>
       </Section>
+
+      <a href="https://forms.gle/C56YNVq4RQXz5Rxm6">
+        <div className="flex justify-center m-24 bg-best-blue-100 text-best-blue-900 rounded-3xl px-7 py-3 sm:px-14 md:px-7">
+          <div className="uppercase font-bold text-xs sm:text-base md:text-sm">
+            Prijavi se
+          </div>
+        </div>
+      </a>
     </div>
   );
 }

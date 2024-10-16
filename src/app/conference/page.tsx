@@ -222,11 +222,18 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="paragraph-title">
-            Potekalo bo tudi mreženje študentov in podjetij na stojnicah
-            (PARTNERJI) in predstavitev diplomskih, magistrskih, doktorskih in
-            raziskovalnih del študentov na plakatih (POSTER MINUTE 2024).
+        <div className="paragraph-title mb-10">
+          Potekalo bo tudi mreženje študentov in podjetij na stojnicah
+          (PARTNERJI) in predstavitev diplomskih, magistrskih, doktorskih in
+          raziskovalnih del študentov na plakatih (POSTER MINUTE 2024).
         </div>
+        <a href="https://forms.gle/d7zSiyPxhuyjQqjC7">
+          <div className="flex justify-center m-10 bg-best-blue-100 text-best-blue-900 rounded-3xl px-7 py-3 sm:px-14 md:px-7">
+            <div className="uppercase font-bold text-xs sm:text-base md:text-sm">
+              Prijavi se
+            </div>
+          </div>
+        </a>
       </div>
     </main>
   );

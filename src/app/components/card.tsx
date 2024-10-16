@@ -78,6 +78,7 @@ export default function Card({
             <div className="md:hidden">
               <div className="rounded-xl relative w-full h-auto">
                 <Image
+                  className="w-full h-full rounded-xl"
                   src={image}
                   width={400}
                   height={400}
