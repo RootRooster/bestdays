@@ -96,7 +96,7 @@ export default function Home() {
         <Hero title="Best dnevi znanosti" buttonText="">
           <div>
             <p>
-              <span className="font-bold">
+              <span className="font-bold text-sm md:text-base">
                 Interdisciplinarni strokovno-izobraževalni dogodek
               </span>
               , ki ga organiziramo člani neprofitnega študentskega društva{" "}

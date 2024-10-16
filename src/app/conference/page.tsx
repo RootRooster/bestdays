@@ -223,11 +223,9 @@ export default function Page() {
           </div>
         </div>
         <div className="paragraph-title">
-          <h3 className="text-xl md:text-2xl">
             Potekalo bo tudi mreženje študentov in podjetij na stojnicah
             (PARTNERJI) in predstavitev diplomskih, magistrskih, doktorskih in
             raziskovalnih del študentov na plakatih (POSTER MINUTE 2024).
-          </h3>
         </div>
       </div>
     </main>

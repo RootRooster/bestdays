@@ -61,14 +61,14 @@ export default function Card({
               <div className="buttons mx-5 flex justify-center gap-5 mb-5">
                 <a href={register}>
                   <div className="flex justify-center bg-best-blue-100 text-best-blue-900 rounded-3xl px-7 py-3 sm:px-14 md:px-7">
-                    <div className="uppercase font-bold text-sm sm:text-base md:text-sm">
+                    <div className="uppercase font-bold text-xs sm:text-base md:text-sm">
                       Prijavi se
                     </div>
                   </div>
                 </a>
                 <Link href={readMore}>
                   <div className="flex justify-center bg-best-blue-900 border-white border rounded-3xl px-7 py-3 sm:px-14 md:px-7">
-                    <div className="uppercase font-bold text-sm sm:text-base md:text-sm">
+                    <div className="uppercase font-bold text-xs sm:text-base md:text-sm">
                       Preberi več
                     </div>
                   </div>
