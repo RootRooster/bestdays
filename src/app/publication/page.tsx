@@ -1,4 +1,3 @@
-
 export default function Page() {
   return (
     <>
@@ -40,15 +39,17 @@ export default function Page() {
               V primeru vprašanj nam piši na: bdz@bestljubljana.si
             </p>
           </div>
-          <div
-            className={`flex mb-20 columns-2 duration-300 justify-start mt-12 md:mt-20`}
-          >
-            <a
-              className={`transition ease-in-out delay-150 hover:scale-110 hover:-translate-y-1 bg-best-blue-100 shadow-md hover:shadow-xl font-bold p-5 md:px-20 text-xl md:text-base px-32 rounded-full text-best-blue-900`}
-              href="https://forms.gle/Dm2HiuRQs7YRjd1a7"
+          <div className="hidden">
+            <div
+              className={`flex mb-20 columns-2 duration-300 justify-start mt-12 md:mt-20`}
             >
-              ODDAJ POSTER
-            </a>
+              <a
+                className={`transition ease-in-out delay-150 hover:scale-110 hover:-translate-y-1 bg-best-blue-100 shadow-md hover:shadow-xl font-bold p-5 md:px-20 text-xl md:text-base px-32 rounded-full text-best-blue-900`}
+                href="https://forms.gle/Dm2HiuRQs7YRjd1a7"
+              >
+                ODDAJ POSTER
+              </a>
+            </div>
           </div>
         </div>
       </div>
