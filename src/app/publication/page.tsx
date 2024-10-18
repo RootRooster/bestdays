@@ -71,14 +71,14 @@ export default function Page() {
                 onClick={() => setImage(-1)}>X</div>
           <div
             id="prev"
-            className="absolute left-0 top-[45vh] py-20 px-10 bg-best-blue-900 bg-opacity-50 text-xl"
+            className="absolute left-0 top-[45vh] py-7 md:py-20 px-3 md:px-10 bg-best-blue-900 bg-opacity-50 text-xl"
             onClick={() => setImage(Math.abs((image-1)%posterIds.length))}
           >
             &lt;
           </div>
           <div
             id="next"
-            className="absolute right-0 top-[45vh] py-20 px-10 bg-best-blue-900 bg-opacity-50  text-xl"
+            className="absolute right-0 top-[45vh] py-7 md:py-20 px-3 md:px-10 bg-best-blue-900 bg-opacity-50  text-xl"
             onClick={() => setImage(Math.abs((image+1)%posterIds.length))}
           >
             &gt;
