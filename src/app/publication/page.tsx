@@ -1,11 +1,14 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Popin from "../components/popin";
-let posterIds: string[] = [];
-for (let i = 1; i <= 10; i++) {
-  posterIds.push(i.toString());
+let posterIds: number[] = [];
+for (let i = 0; i < 12; i++) {
+  posterIds.push(i);
 }
 export default function Page() {
+  const [image, setImage] = useState(-1);
   const subHidden = true;
   return (
     <>
@@ -60,25 +63,58 @@ export default function Page() {
             </div>
           </div>
         </div>
+
+        <div
+          className={`${image == -1 ? "hidden" : ""} bg-best-blue-900 bg-opacity-50 fixed top-0 w-[100vw] h-[100vh] z-30`}
+        >
+          <div className="absolute top-0 left-0 my-5 mx-10 text-xl"
+                onClick={() => setImage(-1)}>X</div>
+          <div
+            id="prev"
+            className="absolute left-0 top-[45vh] py-20 px-10 bg-best-blue-900 bg-opacity-50 text-xl"
+            onClick={() => setImage(Math.abs((image-1)%posterIds.length))}
+          >
+            &lt;
+          </div>
+          <div
+            id="next"
+            className="absolute right-0 top-[45vh] py-20 px-10 bg-best-blue-900 bg-opacity-50  text-xl"
+            onClick={() => setImage(Math.abs((image+1)%posterIds.length))}
+          >
+            &gt;
+          </div>
+          <div className="flex items-center h-[100vh] w-[100vw] justify-center align-middle">
+            <div className="items-center md:m-20">
+              <Link href={`/poster/${image}.pdf`}>
+                <Image
+                  src={`/poster/${image}.jpg`}
+                  alt="poster"
+                  width={900}
+                  height={500}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
         <div className={`${!subHidden ? "hidden" : ""}`}>
           <div className="this w-[100%] min-h-[100%] pt-24">
-            <h1 className="text-2xl md:text-4xl mb-12">
-              Poster minute 2024
-            </h1>
+            <h1 className="text-2xl md:text-4xl mb-12">Poster minute 2024</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-14">
               {posterIds.map((id) => (
-                  <div key={id} className="transition hover:-translate-y-10 shadow-best-blue-900 shadow-lg">
-                  <Popin >
-                    <Link href="/poster/1.pdf">
-                      <Image
-                        src="/poster/1.jpg"
-                        alt="poster"
-                        height={333}
-                        width={333}
-                      />
-                    </Link>
-                </Popin>
-                  </div>
+                <div
+                  key={id}
+                  className="transition hover:-translate-y-10"
+                  onClick={() => setImage(id)}
+                >
+                  <Popin>
+                    <Image
+                      src={`/poster/${id}.jpg`}
+                      alt="poster"
+                      height={333}
+                      width={333}
+                    />
+                  </Popin>
+                </div>
               ))}
             </div>
           </div>
