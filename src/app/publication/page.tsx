@@ -97,7 +97,7 @@ export default function Page() {
           </div>
         </div>
         <div className={`${!subHidden ? "hidden" : ""}`}>
-          <div className="this w-[100%] min-h-[100%] pt-24">
+          <div className="this w-[100%] min-h-[100%] pt-24 mb-20">
             <h1 className="text-2xl md:text-4xl mb-12">Poster minute 2024</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-14">
               {posterIds.map((id) => (
