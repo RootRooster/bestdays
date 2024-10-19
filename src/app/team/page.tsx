@@ -18,7 +18,7 @@ export default function Page() {
       name: "Špela Blaznik",
       role: "Stiki s podjetji",
       image: "Špela.jpg",
-      link: "www.linkedin.com/in/špela-blaznik-925b94278 ",
+      link: "https://www.linkedin.com/in/špela-blaznik-925b94278 ",
     },
     {
       name: "Lara Likar",
@@ -48,7 +48,7 @@ export default function Page() {
       name: "Lucija Kovaček",
       role: "Ekipa za PR",
       image: "Lucija.jpg",
-      link: "www.linkedin.com/in/lucija-kovaček-552975323",
+      link: "https://www.linkedin.com/in/lucija-kovaček-552975323",
     },
     {
       name: "Deni Krašna",
@@ -57,7 +57,12 @@ export default function Page() {
       link: "https://www.linkedin.com/in/deni-krasna-796b2a300/?trk=people-guest_people_search-card&originalSubdomain=si",
     },
     { name: "Manca Simončič", role: "Logistika", image: "Manca.jpg", link: "" },
-    { name: "Nik Čadež", role: "IT", image: "Nik.jpg", link: "https://www.linkedin.com/in/nik-%C4%8Dade%C5%BE-2068861b4/" },
+    {
+      name: "Nik Čadež",
+      role: "IT",
+      image: "Nik.jpg",
+      link: "https://www.linkedin.com/in/nik-%C4%8Dade%C5%BE-2068861b4/",
+    },
   ];
   return (
     <>
