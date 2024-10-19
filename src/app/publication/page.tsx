@@ -4,11 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import Popin from "../components/popin";
 let posterIds: number[] = [];
-for (let i = 0; i < 12; i++) {
+for (let i = 0; i < 24; i++) {
   posterIds.push(i);
 }
 export default function Page() {
   const [image, setImage] = useState(-1);
+  const [type, setType] = useState("poster");
+  const [count, setCount] = useState(0);
+
+  const showPoster = (id: number) => {
+    setImage(id);
+    setType("poster");
+    setCount(posterIds.length);
+  };
+  const showZbornik = () => {
+    setImage(0);
+    setType("zbornik");
+    setCount(15);
+  };
   const subHidden = true;
   return (
     <>
@@ -65,46 +78,82 @@ export default function Page() {
         </div>
 
         <div
-          className={`${image == -1 ? "hidden" : ""} bg-best-blue-900 bg-opacity-50 fixed top-0 w-[100vw] h-[100vh] z-30`}
+          className={`${image == -1 ? "hidden" : ""} bg-best-blue-900 bg-opacity-50 fixed top-0 w-[100vw] h-[100vh] z-50`}
         >
-          <div className="absolute top-0 left-0 my-5 mx-10 text-xl"
-                onClick={() => setImage(-1)}>X</div>
+          <div
+            className="absolute top-0 left-0 my-5 mx-10 text-xl"
+            onClick={() => setImage(-1)}
+          >
+            X
+          </div>
           <div
             id="prev"
             className="absolute left-0 top-[45vh] py-7 md:py-20 px-3 md:px-10 bg-best-blue-900 bg-opacity-50 text-xl"
-            onClick={() => setImage(Math.abs((image-1)%posterIds.length))}
+            onClick={() => setImage((((image - 1) % count) + count) % count)}
           >
             &lt;
           </div>
           <div
             id="next"
             className="absolute right-0 top-[45vh] py-7 md:py-20 px-3 md:px-10 bg-best-blue-900 bg-opacity-50  text-xl"
-            onClick={() => setImage(Math.abs((image+1)%posterIds.length))}
+            onClick={() => setImage((((image + 1) % count) + count) % count)}
           >
             &gt;
           </div>
           <div className="flex items-center h-[100vh] w-[100vw] justify-center align-middle">
             <div className="items-center md:m-20">
-              <Link href={`/poster/${image}.pdf`}>
-                <Image
-                  src={`/poster/${image}.jpg`}
-                  alt="poster"
-                  width={900}
-                  height={500}
-                />
-              </Link>
+              {type == "zbornik" ? (
+                <Link href={`/${type}/0.pdf`}>
+                  <Image
+                    src={`/${type}/${image}.jpg`}
+                    alt="poster"
+                    width={900}
+                    height={500}
+                  />
+                </Link>
+              ) : (
+                <Link href={`/${type}/${image}.pdf`}>
+                  <Image
+                    src={`/${type}/${image}.jpg`}
+                    alt="poster"
+                    width={900}
+                    height={500}
+                  />
+                </Link>
+              )}
             </div>
           </div>
         </div>
         <div className={`${!subHidden ? "hidden" : ""}`}>
-          <div className="this w-[100%] min-h-[100%] pt-24 mb-20">
+          <div className="w-[100%] min-h-[100%] pt-24 mb-20">
+            <h1 className="text-2xl md:text-4xl mb-12">
+              Zbornik povzetkov konference 2024
+            </h1>
+            <div className="flex justify-start">
+              <div>
+                <div
+                  className="transition hover:-translate-y-10 mb-20 mx-2"
+                  onClick={() => showZbornik()}
+                >
+                  <Popin>
+                    <Image
+                      className=""
+                      src={`/zbornik/0.jpg`}
+                      alt="poster"
+                      height={433}
+                      width={433}
+                    />
+                  </Popin>
+                </div>
+              </div>
+            </div>
             <h1 className="text-2xl md:text-4xl mb-12">Poster minute 2024</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-14">
               {posterIds.map((id) => (
                 <div
                   key={id}
-                  className="transition hover:-translate-y-10"
-                  onClick={() => setImage(id)}
+                  className="transition hover:-translate-y-10 flex justify-center mx-2"
+                  onClick={() => showPoster(id)}
                 >
                   <Popin>
                     <Image

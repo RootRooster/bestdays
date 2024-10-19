@@ -94,21 +94,22 @@ export default function Home() {
     <main>
       <Popin>
         <Hero title="Best dnevi znanosti" buttonText="">
-          <div>
+          <div className="text-sm md:text-3xl flex justify-center">
+            <div className="md:w-[75%]">
             <p>
-              <span className="font-bold text-sm md:text-base">
+              <span className="font-bold">
                 Interdisciplinarni strokovno-izobraževalni dogodek
               </span>
               , ki ga organiziramo člani neprofitnega študentskega društva{" "}
               <span className="font-bold">BEST Ljubljana</span> (angl. Board of
               European Students of Technology).
             </p>
-
-            <p className="mt-2">
+<p className="mt-2">
               V okviru dogodka organiziramo{" "}
               <span className="font-bold">konferenco, delavnice</span> in{" "}
               <span className="font-bold">študijo primera</span>.
             </p>
+            </div>
           </div>
         </Hero>
       </Popin>
