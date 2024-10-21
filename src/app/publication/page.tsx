@@ -3,10 +3,209 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Popin from "../components/popin";
-let posterIds: number[] = [];
-for (let i = 0; i < 24; i++) {
-  posterIds.push(i);
-}
+
+type posterDataObject = {
+  id: number;
+  avtorji: string[];
+  naslov: string;
+};
+const posterData: posterDataObject[] = [
+  {
+    id: 0,
+    avtorji: [
+      "J. Štenkler",
+      "I. Kralj Cigić",
+      "T. Balaško",
+      "N. Guzelj",
+      "L. Lengar",
+      "J. Levstek",
+      "G. Pirnat",
+      "L. Stepanova",
+      "L. Šarić",
+      "K. Ziherl",
+      "H. Prosen",
+    ],
+    naslov:
+      "Pravilnost odgovorov in omejitve prosto dostopnega orodja ChatGPT v slovenščini na primerih okoljske problematike",
+  },
+  {
+    id: 1,
+    avtorji: [
+      "Natalija Tomažin",
+      "Marko Božinović",
+      "Francesca Annunziata",
+      "Andrea Pinto",
+      "Polona Žnidaršič-Plazl",
+    ],
+    naslov:
+      "Development of a continuous δ-viniferin synthesis in a microreactor using immobilized horseradish peroxidase",
+  },
+  {
+    id: 2,
+    avtorji: ["Neža Lesjak", "Jeremy Di Domizio"],
+    naslov:
+      "Understanding the mode of activation of plasmacytoid dendritic cells in different skin disorders",
+  },
+  {
+    id: 3,
+    avtorji: [
+      "Nadja Suhorepec",
+      "Luka Ciber",
+      "Uroš Grošelj",
+      "Bogdan Štefane",
+      "Marko Novinec",
+      "Jurij Svete",
+    ],
+    naslov:
+      "Bioconjugation and covalent binding of native proteins using azide-alkyne cycloaddition",
+  },
+  {
+    id: 4,
+    avtorji: [
+      "Tjaša Like",
+      "Ula Rozman",
+      "Jernej Imperl",
+      "Gabriela Kalčíková",
+    ],
+    naslov:
+      "Study of the desorption of nanoparticles previously adsorbed on polyethlene microplastics",
+  },
+  {
+    id: 5,
+    avtorji: ["Špela Rapuš", "mag. Urša Čerček", "prof. dr. Boris Rogelj"],
+    naslov: "Izražanje in izolacija proteina fenilalanin tRNA-sintetaze (FARS)",
+  },
+  {
+    id: 6,
+    avtorji: ["Lena Kogoj", "dr. Emmanouil Kyriakakis", "prof. Anne Spang"],
+    naslov:
+      "Vloga transteritinu-podobnih proteinov v proteostazi pri C. elegans",
+  },
+  {
+    id: 7,
+    avtorji: ["Milena Stojkovska Docevska"],
+    naslov:
+      "Optimisation of protein production in FreeStyle 293-F cells with six peptones",
+  },
+  {
+    id: 8,
+    avtorji: [
+      "Blaž Režonja",
+      "Ela Vavpetič",
+      "Neža Kokalj",
+      "Aleš Kladnik",
+      "Primož Vavpetič",
+      "Mitja Kelemen",
+      "Paula Pongrac",
+    ],
+    naslov: "Tissue-specific element profiles in edible seeds",
+  },
+  {
+    id: 9,
+    avtorji: ["Martina Mileva", "Aleksander Kravos", "Helena Prosen"],
+    naslov:
+      "Simplified and fast analysis of selected pharmaceuticals with dispersive micro solid-phase extraction (DMSPE)",
+  },
+  {
+    id: 10,
+    avtorji: ["Nik Nikoli", "Jan Ocepek", "Ida Kraševec", "Matija Strlič"],
+    naslov:
+      "Študija degradacije zgodovinskega papirja z metodami pospešene razgradnje",
+  },
+  {
+    id: 11,
+    avtorji: ["Pia Mencin", "Metka Novak", "Barbara Breznik"],
+    naslov: "Preučevanje interakcije PD-1/PD-L1 v mikrookolju glioblastoma",
+  },
+  {
+    id: 12,
+    avtorji: [
+      "Katarina Čubej",
+      "Samo Bordon",
+      "Jena Jamšek",
+      "Oliver Bajt",
+      "Helena Prosen",
+    ],
+    naslov:
+      "Optimization of analytical methods for photodegradation products of PAH and phthalate esters adsorbed on microplastics",
+  },
+  {
+    id: 13,
+    avtorji: ["Žiga Koren"],
+    naslov: "Vpliv oznake FLAG na fazno separacijo tekoče-tekoče",
+  },
+  {
+    id: 14,
+    avtorji: ["Janja Bohte", "Tadeja Kuret", "Peter Veranič"],
+    naslov:
+      "Modulatng infammaton, oxidatve stress and urothelial barrier dysfuncton: The role of taurine in an in vitro model of intersttal cystts",
+  },
+  {
+    id: 15,
+    avtorji: ["Ula Mikoš"],
+    naslov: "Nepričakovan preobrat pri inhibiciji invazije rakavih celic!",
+  },
+  {
+    id: 16,
+    avtorji: [
+      "Martin Jazbec",
+      "Prasenjit P. Sukul",
+      "Luís F. Santos",
+      "Rui M. Almeida",
+    ],
+    naslov:
+      "Impact of Substrate on Optical Properties of 1-D Photonic Crystals for White LEDs",
+  },
+  {
+    id: 17,
+    avtorji: [
+      "Lora Gržin, mag. farm.",
+      "izr. prof. dr. Anja Pišlar, mag. farm.",
+      "asist. Selene Horvat, mag.",
+    ],
+    naslov:
+      "Izražanje γ-enolaze in njeno uravnavanje s katepsinom X v poškodovanih dopaminergičnih nevroblastomskih celicah",
+  },
+  {
+    id: 18,
+    avtorji: ["Anastazija Rakar"],
+    naslov:
+      "Triazolijeve soli kot napredni ligandi: Sinteza in njihova uporabnost",
+  },
+  {
+    id: 19,
+    avtorji: ["Zoja Žnidarič"],
+    naslov: "Pretvorbe elektronsko bogatih aromatov pri alternativnih pogojih",
+  },
+  {
+    id: 20,
+    avtorji: ["Špela Blaznik", "Ana Lisac", "Aleš Podgornik"],
+    naslov:
+      "The effect of Staphylococcus capitis growth rate on the effectiveness of bacteriophage K",
+  },
+  {
+    id: 22,
+    avtorji: ["Marcel Žafran", "Ana Gajić", "Lovro Žiberna", "Alen Albreht"],
+    naslov:
+      "In vitro antioxidant activity and total phenolic content of different extracts of Himalayan Balsam (Impatiens glandulifera Royle)",
+  },
+  {
+    id: 23,
+    avtorji: [
+      "Tjaša Likeb",
+      "Martin Capuder",
+      "Tina Skalar",
+      "Andreja Pondelak",
+    ],
+    naslov: "Analysis of Adhesive Joint Using Beech Wood",
+  },
+  {
+    id: 21,
+    avtorji: ["Tina Logonder", "Aljaž Gaber"],
+    naslov:
+      "Raziskovanje strukture signalnega kompleksa FHL2:β-katenin v povezavi z EpCAM",
+  },
+];
 export default function Page() {
   const [image, setImage] = useState(-1);
   const [type, setType] = useState("poster");
@@ -15,7 +214,7 @@ export default function Page() {
   const showPoster = (id: number) => {
     setImage(id);
     setType("poster");
-    setCount(posterIds.length);
+    setCount(posterData.length);
   };
   const showZbornik = () => {
     setImage(0);
@@ -105,7 +304,7 @@ export default function Page() {
               {type == "zbornik" ? (
                 <Link href={`/${type}/0.pdf`}>
                   <Image
-                    src={`/${type}/${image}.jpg`}
+                    src={`/${type}/${image}.png`}
                     alt="poster"
                     width={900}
                     height={500}
@@ -138,7 +337,7 @@ export default function Page() {
                   <Popin>
                     <Image
                       className=""
-                      src={`/zbornik/0.jpg`}
+                      src={`/zbornik/0.png`}
                       alt="poster"
                       height={433}
                       width={433}
@@ -149,10 +348,10 @@ export default function Page() {
             </div>
             <h1 className="text-2xl md:text-4xl mb-12">Poster minute 2024</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-14">
-              {posterIds.map((id) => (
+              {posterData.map(({ id, avtorji, naslov }) => (
                 <div
                   key={id}
-                  className="transition hover:-translate-y-10 flex justify-center mx-2"
+                  className="w-80 transition hover:-translate-y-10 flex justify-center mx-2"
                   onClick={() => showPoster(id)}
                 >
                   <Popin>
@@ -162,6 +361,25 @@ export default function Page() {
                       height={333}
                       width={333}
                     />
+                    {id == 0 ? (
+                      <p className="w-80 uppercase text-red-500 bg-white opacity-50">
+                        Poster originalno objavlen na Slovenskih kemijskih
+                        dnevih 2024.
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                    <p className="w-80 uppercase font-bold text-best-blue-900 bg-white opacity-50">
+                      {naslov}
+                    </p>
+                    <p className="w-80 text-best-blue-900 bg-white opacity-50">
+                      {avtorji.map((item: string, index: number) => (
+                        <span key={index}>
+                          {item}
+                          {index < avtorji.length - 1 && ", "}
+                        </span>
+                      ))}
+                    </p>
                   </Popin>
                 </div>
               ))}
