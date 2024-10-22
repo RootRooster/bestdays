@@ -1,4 +1,5 @@
 import Section from "../components/section";
+import Image from 'next/image';
 
 export default function Page() {
   return (
@@ -199,6 +200,20 @@ export default function Page() {
           </p>
         </div>
         <br />
+        <div className="flex mb-5">
+        <Image
+          src="/tehpark1.jpg"
+          height={100}
+          width={100}
+          alt="logotip projekta digi-si"
+        />
+
+        <Image
+          src="/tehpark1.png"
+          height={100}
+          width={1000}
+          alt="logotip projekta digi-si"
+        /></div>
 
         <div className="text-5xl font-bold">
           Število mest na delavnicah je omejeno!
