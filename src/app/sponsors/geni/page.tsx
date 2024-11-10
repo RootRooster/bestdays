@@ -4,7 +4,9 @@ export default function Page() {
     <>
       <CompanyP>
         <div>
-          <h1 className="mt-12 text-4xl">GEN-I</h1>
+          <h1 className="mt-12 text-4xl">
+            <a href="https://gen-i.si">GEN-I</a>
+          </h1>
           <p className="mt-7">
             Skupina GEN je največji slovenski proizvajalec in dobavitelj
             nizkoogljične električne energije na temelju jedrske energije in
