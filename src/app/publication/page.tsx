@@ -225,7 +225,7 @@ export default function Page() {
     setImage(0);
     setType("zbornik2");
     setCount(27);
-  }
+  };
   const subHidden = true;
   return (
     <>
@@ -306,10 +306,10 @@ export default function Page() {
           </div>
           <div className="flex items-center h-[100vh] w-[100vw] justify-center align-middle">
             <div className="items-center md:m-20">
-              {type == "zbornik" ? (
+              {["zbornik", "zbornik2"].includes(type) ? (
                 <Link href={`/${type}/0.pdf`}>
                   <Image
-                    src={`/${type}/${image}.png`}
+                    src={`/${type}/${image}.${type === "zbornik" ? "png" : "jpg"}`}
                     alt="poster"
                     width={900}
                     height={500}
@@ -334,33 +334,33 @@ export default function Page() {
               Zbornik povzetkov konference 2024
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
-                <div
-                  className="transition hover:-translate-y-10 flex justify-center mx-2"
-                  onClick={() => showZbornik()}
-                >
-                  <Popin>
-                    <Image
-                      className=""
-                      src={`/zbornik/0.png`}
-                      alt="poster"
-                      height={433}
-                      width={433}
-                    />
-                  </Popin>
-                  <div
-                    className="transition hover:-translate-y-10 flex justify-center mx-2"
-                    onClick={() => showZbornik2()}
-                  >
-                    <Popin>
-                      <Image
-                        className=""
-                        src={`/zbornik2/0.jpg`}
-                        alt="poster"
-                        height={433}
-                        width={433}
-                      />
-                    </Popin>
-                </div>
+              <div
+                className="transition hover:-translate-y-10 flex justify-center mx-2"
+                onClick={() => showZbornik()}
+              >
+                <Popin>
+                  <Image
+                    className=""
+                    src={`/zbornik/0.png`}
+                    alt="poster"
+                    height={433}
+                    width={433}
+                  />
+                </Popin>
+              </div>
+              <div
+                className="transition hover:-translate-y-10 flex justify-center mx-2"
+                onClick={() => showZbornik2()}
+              >
+                <Popin>
+                  <Image
+                    className=""
+                    src={`/zbornik2/0.jpg`}
+                    alt="poster"
+                    height={433}
+                    width={433}
+                  />
+                </Popin>
               </div>
             </div>
             <h1 className="text-2xl md:text-4xl mb-12">Poster minute 2024</h1>
