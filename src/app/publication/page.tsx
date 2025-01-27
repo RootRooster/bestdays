@@ -221,6 +221,11 @@ export default function Page() {
     setType("zbornik");
     setCount(15);
   };
+  const showZbornik2 = () => {
+    setImage(0);
+    setType("zbornik2");
+    setCount(27);
+  }
   const subHidden = true;
   return (
     <>
@@ -328,10 +333,9 @@ export default function Page() {
             <h1 className="text-2xl md:text-4xl mb-12">
               Zbornik povzetkov konference 2024
             </h1>
-            <div className="flex justify-start">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
                 <div
-                  className="transition hover:-translate-y-10 mb-20 mx-2"
+                  className="transition hover:-translate-y-10 flex justify-center mx-2"
                   onClick={() => showZbornik()}
                 >
                   <Popin>
@@ -343,6 +347,19 @@ export default function Page() {
                       width={433}
                     />
                   </Popin>
+                  <div
+                    className="transition hover:-translate-y-10 flex justify-center mx-2"
+                    onClick={() => showZbornik2()}
+                  >
+                    <Popin>
+                      <Image
+                        className=""
+                        src={`/zbornik2/0.jpg`}
+                        alt="poster"
+                        height={433}
+                        width={433}
+                      />
+                    </Popin>
                 </div>
               </div>
             </div>
